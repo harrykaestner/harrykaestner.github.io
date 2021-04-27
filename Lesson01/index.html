@@ -27,9 +27,9 @@
                 </a></p>            
             </footer>
   
-            <p>Last updated: <span id="datetime"></span></p>
-            <script>var dt = new Date();
-         document.getElementById("datetime").innerHTML=dt.toLocaleString();
+            <script>
+                var date = document.lastModified;
+                document.write("Last Updated: "+date);
             </script>
   
   </body>
