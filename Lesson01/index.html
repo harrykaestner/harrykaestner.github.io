@@ -27,18 +27,10 @@
                 </a></p>            
             </footer>
   
-  <p>Click the button to display the date and time this document was last modified.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var x = document.lastModified;
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
+            <p>Last updated: <span id="datetime"></span></p>
+            <script>var dt = new Date();
+         document.getElementById("datetime").innerHTML=dt.toLocaleString();
+            </script>
   
   </body>
 
