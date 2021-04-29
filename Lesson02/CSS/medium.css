@@ -25,13 +25,7 @@
     height: 55px;
   }
 
-  .header-img {
-    width: 200px;
-    height: auto;
-    float: right;
-  }   
-
-  main {
+    main {
   background-color: #DAD7CD;
   text-decoration: none;
 } 
