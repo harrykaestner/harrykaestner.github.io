@@ -80,12 +80,6 @@ footer p:last-of-type {
     font-weight: 400;
 }
 
-.header-img {
-    width: 200px;
-    height: auto;
-    float: right;
-  }  
-
 @media screen and (max-width: 480px) {
 
     /* Small */
