@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Assignment ">
-    <title>Design Principles Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesml.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Harry Kaestner</h1>
-            <a href="index.html">Home</a>
-        </header>
-        <main>
-            <h1>Design Principles</h1>
-            <div class="grid">
-                <div class="card">
-                    <h2>Visual Hierarchy</h2>
-                    <img src="img/dropbox.jpg" alt="Dropbox screenshot">
-                    <p>Visual Hierarchy is well exemplified here because we can distinguish easily which content is more impotant</p>
-                    <p>We could identify which is the title and where is the navigation and where the rest of the content</p>
-                </div>
-                <div class="card">
-                    <h2>White Space & Clean Design</h2>
-                    <img src="img/dribbble.jpg" alt="Dribbble screenshot">
-                    <p>Here we can see how there is enough space between elements.</p>
-                    <p>Enough white space makes the design cleaner and easier to read</p>
-                </div>
-                <div class="card">
-                    <h2>Hick's Law</h2>
-                    <img src="img/gearbest.jpg" alt="Gearbest screenshot">
-                    <p>Gearbest it's a good example of Hick's law because instead of having a large number of options and lists, 
-                        They use simple icons to represent categories and make the user's choice less complicated.</p>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>&copy; <span id="currentYear"></span> | Harry Kaestner | Idaho, USA | <a target="_blank"
-                    href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-            <p>Last Updated: <span id="updatedDate"></span></p>
-        </footer>
-    </div>
-    <script src="js/script.js"></script>
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Michael Fuller">
+        <meta name="description" content="Michael Fuller's Design Principles Week 2 Assignment">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2%7cBaloo+Paaji+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <title>Design Principles Page</title>
+    </head>
+    <body onload="writedate()">
+      <header>
+          <h1>Design Principles</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Visual Hierarchy</h2>
+          <h3>Starbucks</h3>
+          <a href="https://www.starbucks.com/">Starbucks.com</a>
+          <img src="/lesson2/images/starbucks.jpg" alt="Image of Starbucks in Mobile Browser">
+          <p>In this example, you can see how 
+          Starbucks incorporates imagery and font sizes to guide the viewer and grab the viewer's attention toward what they want you to follow or read.
+          </p>
+        </section>
+        <section>
+          <h2>PARC: Alignment</h2>
+          <h3>Wayfair</h3>
+          <a href="https://www.wayfair.com/">Wayfair.com</a>
+          <img src="/lesson2/images/wayfair.jpg" alt="Image of Wayfair in Mobile Browser">
+          <p>Here you can see the alignment of the Wayfair website.  As the viewer scrolls down, you can see the sections are perfectly aligned and seperated for the user to select and also gives the site a clean organized look.
+          </p>
+        </section>
+        <section>
+          <h2>White Space and Clean Design</h2>
+          <h3>Fry's Food Stores</h3>
+          <a href="https://www.frysfood.com/">Frysfood.com</a>
+          <img src="/lesson2/images/frys.jpg" alt="Image of Frys Food in Mobile Browser">
+          <p>Fry's website uses white space to bring focus to the icons, subheadings and food items displayed on the page.  The white space creates a contrast for the viewer to focus on the point of the site, which is to lookup items/ads and shop the store online.
+          </p>
+        </section>
+      </main>
+      <footer>
+          <div>
+              &copy;<span id="copyright"></span> | Michael Fuller | Arizona | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+          </div>
+          Last Updated: <span id="lastUpdate"></span>
+      </footer>
+      <script src="/lesson2/js/date.js"></script>
+  </body>
 </html>
