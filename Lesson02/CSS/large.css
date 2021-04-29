@@ -1,0 +1,9 @@
+@media screen and (min-width:761px) {
+    /* large*/
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+}
