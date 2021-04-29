@@ -127,5 +127,4 @@ footer p:last-of-type {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
     }
-
 }
