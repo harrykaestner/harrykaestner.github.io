@@ -34,10 +34,10 @@
  }
  
  footer {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   font-size: .6em;
- }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: .6em;
+}
  
  .header-img {
      width: 200px;
