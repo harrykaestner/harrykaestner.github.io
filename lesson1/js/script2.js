@@ -1,1 +1,1 @@
-document.querySelector('#lastmod').textcontent = document.lastModified;
+document.querySelector('#lastmod').textContent = document.lastModified;
