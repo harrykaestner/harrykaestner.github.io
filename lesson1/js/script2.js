@@ -1,0 +1,1 @@
+document.querySelector('lastmod').textcontent = document.lastModified
