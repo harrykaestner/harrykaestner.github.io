@@ -1,3 +1,2 @@
-let d = new Date();
-document.querySelector('#theyear').textContent = d.getFullYear();
+document.querySelector('#theyear').textContent = new Date();
 document.querySelector('#lastmod').textContent = document.lastModified;
