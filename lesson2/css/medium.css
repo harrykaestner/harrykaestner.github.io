@@ -1,4 +1,10 @@
 @media only screen and (min-width: 32.5em){
+    
+    body{
+        background-color: #424874;
+        font-family: 'Montserrat', sans-serif;
+        padding: 1em;
+    }
 
     .container {
         max-width:65%;
