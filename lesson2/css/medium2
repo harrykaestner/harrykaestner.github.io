@@ -1,0 +1,14 @@
+@media screen and (min-width:481px) and (max-width: 760px) {
+    /* Medium*/
+
+    body {
+        padding: .5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:1em;
+        width: 90%;
+    }
+}

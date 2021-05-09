@@ -1,0 +1,24 @@
+@media screen and (max-width: 480px) {
+
+    /* Small */
+
+    body{
+        padding: .2em;
+    }
+   
+    .container{
+        width: 95%;
+    }
+
+     header a {
+         margin-left: .2em;
+     }
+
+    .grid{
+        display: block;
+    }
+
+    .card{
+        margin: 1em 0;
+    }
+}
