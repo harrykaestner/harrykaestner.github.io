@@ -7,15 +7,15 @@ body {
 .container {
     max-width: 90%;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: #eeeeee;
     border-radius: 1.2em;
     box-shadow: 0 3px 3px rgba(4, 5, 5, .4);
 }
 
 header,
 footer {
-    background-color: #a6b1e1;
-    color: #fff;
+    background-color: #eeeeee;
+    color: #000000;
     text-align: center;
     padding: .5em;
     border-radius: .8em;
