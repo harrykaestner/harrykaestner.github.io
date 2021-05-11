@@ -1,13 +1,7 @@
 @media only screen and (min-width: 32.5em){
 
-    body{
-        background-color: lightsteelblue;
-        font-family: 'Montserrat', sans-serif;
-        padding: 1em;
-    }
-
     .container {
-    max-width:65%;
+        max-width:65%;
     }
 
     header img {
@@ -22,4 +16,5 @@
     main h2 {
         font-size: 1.8em;
     }
+}
 }
