@@ -13,8 +13,8 @@ body{
 }
 
 header,footer{
-    background-color: #a6b1e1;
-    color: #fff;
+    background-color: #eeeeee;
+    color: #000000;
     text-align: center;
     padding: .5em;
     border-radius: .8em;
@@ -46,10 +46,10 @@ main ul li{
 }
 
 footer a{
-    color: #fff;
+    color: #eeeeee;
 }
 
 footer p:last-of-type{
-    color: #FFEFB8;
+    color:  #0000ee;
     font-weight: 400;
 }
