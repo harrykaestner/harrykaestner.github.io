@@ -22,7 +22,7 @@ header,footer{
 }
 
 header img{
-    float: right;
+    float: none;
     max-width: 9em;
     box-shadow: 0 3px 3px rgba(3, 3, 3, .4);
 }
