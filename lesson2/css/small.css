@@ -46,10 +46,10 @@ main ul li{
 }
 
 footer a{
-    color: #fff;
+    color: #000000;
 }
 
 footer p:last-of-type{
-    color: #FFEFB8;
+    color: #000000;
     font-weight: 400;
 }
