@@ -31,11 +31,12 @@ header{
 
 header h1 {
     margin: 0;
+    color: #000000
     font-size: 2em;
 }
 
 header a{
-    color:#fff;
+    color:#000000;
     text-decoration: none;
 }
 
@@ -72,11 +73,11 @@ main {
 }
 
 footer a {
-    color: #fff;
+    color: #000000;
 }
 
 footer p:last-of-type {
-    color: #FFEFB8;
+    color: #000000;
     font-weight: 400;
 }
 
