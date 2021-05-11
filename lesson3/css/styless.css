@@ -15,7 +15,7 @@ body {
 header,
 footer {
     background-color: #a6b1e1;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: .5em;
     text-shadow: 0 3px 3px rgba(4, 3, 3, .5);
@@ -70,7 +70,7 @@ nav ul li a{
 
 nav ul li a:hover {
     background-color: #2F4858;
-    color: #fff;
+    color: #000000;;
 }
 
 section{
