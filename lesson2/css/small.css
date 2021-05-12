@@ -1,69 +1,82 @@
-a {
-    color: #FFFF66;
-    font-weight: bold;
-  }
-  
-  header {
-    background-color: #1E90FF;
-    color: black;
-    justify-content: space-between;
-    border-radius: 15px;
-  }
-  
-  h1 {
-    font-family: 'Baloo Paaji 2', cursive;
-    font-size: 2.5em;
-    padding-top: 15px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.3em;
-    font-family: 'Baloo Bhaina 2', cursive;
-  }
-  
-  h3{
-    padding-bottom: 8px;
-  }
-  
-  img {
-    margin-top: 8px;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin:auto;
-  }
-  
-  p {
-    font-size: 1em;
-    font-weight: bold;
-    color:	#FFFF66;
-  }
-  
-  section {
-    background-color: #4682B4;
-    border-radius: 15px;
-    text-align: center;
-    margin: 10px;
-  }
-  
-  footer {
-    background-color: #1E90FF;
-    color: black;
-    font-size: 1em;
-    text-align: center;
-    padding-top: 25px;
-  }
-  
-  #copyright {
-    font-family: 'Baloo Bhaina 2', cursive;
-  }
-  
-  #lastUpdate {
-    font-size: 1.0em;
-    font-family: 'Baloo Bhaina 2', cursive;
-    padding-top: 5px;
-  }
+body {
+  background-color: #424874;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 1.2em;
+  box-shadow: 0 3px 3px rgba(4, 5, 5, .4);
+}
+
+header,
+footer {
+  background-color: #a6b1e1;
+  color: #fff;
+  text-align: center;
+  padding: .5em;
+  border-radius: .8em;
+  text-shadow: 0 3px 3px rgba(4, 3, 3, .5);
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+header h1 {
+  margin: 0;
+  color: #000000;
+  font-size: 2em;
+}
+
+header a{
+  color:#000000;
+  text-decoration: none;
+}
+
+main {
+  padding: 1em;
+  text-align: center;
+}
+
+.card{
+  border: 1px #a6b1e1 solid;
+  border-radius: .5em;
+  padding: .5em;
+}
+
+.card h2{
+  border-bottom:solid 3px #424874;
+  margin:0;
+  padding: .5em;
+  padding-top: 1em;
+  min-height: 2.5em;
+  line-height: 100%;
+}
+
+.card img{
+  margin: 1.5em 0;
+  box-shadow: 0 10px 6px -6px #777;
+  border-radius: .5em;
+  max-width: 100%;
+}
+
+.card p{
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+footer a {
+  color: #000000;
+}
+
+footer p:last-of-type {
+  color: #000000;
+  font-weight: 400;
 }
