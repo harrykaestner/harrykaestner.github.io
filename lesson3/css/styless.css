@@ -157,7 +157,7 @@ section{
 }
 
 .color-scheme table tr td:nth-of-type(2) {
-    color: #fff;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -171,6 +171,7 @@ section{
 
 .accent1-color {
     background-color: #7CC6FE;
+    color: #000000;
 }
 
 .accent2-color {
