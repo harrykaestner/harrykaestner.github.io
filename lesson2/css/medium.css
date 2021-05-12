@@ -1,14 +1,38 @@
-@media screen and (min-width:481px) and (max-width: 760px) {
-    /* Medium*/
+@media only screen and (min-width: 32.5em) {
 
-    body {
-        padding: .5em;
+    h1 {
+      font-size: 3.5em;
+      margin-top: 17px;
     }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap:1em;
-        width: 90%;
+  
+    main {
+      grid-template-columns: 1fr 1fr;
+      max-width: 900px;
+  }
+  
+    h2 {
+      font-size: 1.8em;
     }
-}
+  
+    header{
+      height: 90px;
+      flex-wrap: wrap;
+      border-radius: 15px;
+    }
+  
+    footer {
+      border-radius: 15px;
+      height: 55px;
+    }
+  
+    section:nth-child(1) {
+      grid-column: span 1;
+      margin-top: 20px;
+  }
+  
+    section:nth-child(2) {
+      grid-column: span 1;
+      margin-top: 20px;
+  }
+    
+  }
