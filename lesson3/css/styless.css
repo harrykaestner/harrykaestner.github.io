@@ -163,20 +163,20 @@ section{
 
 .primary-color{
     background-color: #A6B1E1;
-    color: yellow;
 }
 
 .secondary-color {
     background-color: #424874;
+    color: yellow;
 }
 
 .accent1-color {
     background-color: #7CC6FE;
-    color: yellow;
-}
+    }
 
 .accent2-color {
     background-color: #2F4858;
+    color: yellow;
 }
 
 /* Typography */
