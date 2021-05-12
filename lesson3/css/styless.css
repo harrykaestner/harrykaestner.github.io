@@ -166,8 +166,9 @@ section{
 }
 
 .secondary-color {
-    background-color: #424874;
     color: yellow;
+    background-color: #424874;
+    
 }
 
 .accent1-color {
@@ -175,8 +176,8 @@ section{
     }
 
 .accent2-color {
-    background-color: #2F4858;
     color: yellow;
+    background-color: #2F4858;
 }
 
 /* Typography */
