@@ -3,7 +3,7 @@ body{
 }
 main h1{
     text-align: center;
-    color: darkred;
+    color: red;
     font-size: 3em;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25),
     0 2px 2px rgba(0, 0, 0, 0.25),
