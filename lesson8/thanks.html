@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Weather Today | Home</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="author" content="Harry Kaestner">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <aside id="aside" style="color: darkred">
+    <p>Saturday = Preston Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+  </aside>
+  <header>
+    <picture>
+      <source media="(max-width: 799px)" srcset="images/logo96w.png">
+      <source media="(min-width: 800px)" srcset="images/logo128w.png">
+      <img src="images/logo128w.png" alt="Real Weather Today logo">
+    </picture>
+    <div class="title">
+      <h1>Real Weather Today</h1>
+      <h3>Whenever and Wherever You Need</h3>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Storm Center</h2>
+    <div class="message">
+      <p>Thank you for filling out the form and report the event, we apreciate your contribution</p>
+    </div>
+  </main>
+  <footer>
+    <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
+    <p><span id="currentDate"></span></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Montserrat:300,400,700']
+      }
+    });
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
