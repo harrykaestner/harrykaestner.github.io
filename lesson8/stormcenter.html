@@ -45,27 +45,27 @@
         <form action="thanks.html">
             <div class="input-box">
                 <label for="name">Full Name</label>
-                <input type="text" name="name" pattern="[a-zA-Z]{5,}" required>
+                <input type="text" name="name" id="name" pattern="[a-zA-Z]{5,}" required>
             </div>
             <div class="input-box">
                 <label for="email">Email</label>
-                <input type="email" name="email" placeholder="adress@yourmail.com">
+                <input type="email" name="email" id="email" placeholder="adress@yourmail.com">
             </div>
             <div class="input-box">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="tel"  name="phoneNumber" required>
+                <input type="tel"  name="phoneNumber" id="phoneNumber" required>
             </div>
             <div class="input-box">
                 <label for="zipCode">Zip Code</label>
-                <input type="number" required>
+                <input type="number" id="zipCode" required>
             </div>
             <div class="input-box">
                 <label for="stormDate">Storm Date</label>
-                <input type="date" name="stormDate">
+                <input type="date" name="stormDate" id="stormDate">
             </div>
             <div class="input-box">
                 <label for="selectStormTypestormType">Storm Type</label>
-                <input list="stormType" id="selectStormType" name="selectStormType">
+                <input list="stormType" id="selectStormTypestormType" name="selectStormType">
                 <datalist id="stormType">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
