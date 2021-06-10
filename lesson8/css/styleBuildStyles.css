@@ -1,48 +1,61 @@
-main {
-    display: flex;
-    justify-content: center;
+table {
+    width: 350px;
+    margin: 100px;
+    box-shadow: 10px 15px 13px #628ca6;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+thead,
+tr,
+th,
+td {
+    border: 1.9px solid rgb(190, 184, 184);
+    border-collapse: collapse;
+    padding: 10px;
     text-align: center;
 }
 
-table{
-    box-shadow: 5px 5px 15px #555;
+th,
+td {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
 }
 
-table, th, td{
-    font-family: Ubuntu, sans-serif;
-    border: 1px solid #888;
-    border-collapse: collapse;
-    padding: .5em 1em;
-}
-
-thead tr th{
-    background-color: #7fb9c2;
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
-}
-
-tr:nth-child(6){
-    font-style: italic;
-}
-
-th{
-    background-color: #628ca6;
+th {
     color: white;
-    font-size: 1.2em;
+    background-color: #628ca6;
+    font-weight: bolder;
 }
 
-td{
+thead th {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+tr {
+    background-color: #e7f0ed;
+}
+
+.novgoal {
+    background-color: #628ca6;
+}
+
+b:only-child {
+    color: white;
+}
+
+tr:nth-child(odd) {
     background-color: #e7ffed;
 }
 
-tfoot td{
+tfoot td {
+    font-size: 1rem;
     background-color: #7fb9c2;
-    font-size: .8em;
-}
-
-.colored{
-    background-color: #628ca6;
-    color: white;
-    font-weight: bold;
 }
