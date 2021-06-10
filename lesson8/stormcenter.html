@@ -44,29 +44,29 @@
         <h2>Storm Center</h2>
         <form action="thanks.html">
             <div class="input-box">
-                <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" pattern="[a-zA-Z]{5,}" required>
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Harry Kaestner" pattern="[A-Za-z]{5}*" required>
             </div>
             <div class="input-box">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="adress@yourmail.com">
+                <input type="email" name="email" id="email" placeholder="adress@yourmail.com" minlength="3" maxlength="64" required>
             </div>
             <div class="input-box">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="tel"  name="phoneNumber" id="phoneNumber" required>
+                <input type="tel"  name="phoneNumber" id="phoneNumber" placeholder="###-###-####" required required>
             </div>
             <div class="input-box">
                 <label for="zipCode">Zip Code</label>
-                <input type="number" id="zipCode" required>
+                <input type="number" id="zipCode" placeholder="#####" required>
             </div>
             <div class="input-box">
                 <label for="stormDate">Storm Date</label>
-                <input type="date" name="stormDate" id="stormDate">
+                <input type="date" name="stormDate" id="stormDate" value="2020-06-11" min="2020-01-01" max="2100-01-01">
             </div>
             <div class="input-box">
                 <label for="selectStormTypestormType">Storm Type</label>
-                <input list="stormType" id="selectStormTypestormType" name="selectStormType">
-                <datalist id="stormType">
+                <input list="selectStormTypestormType" id="selectStormTypestormType" name="selectStormType">
+                <datalist id="selectStormTypestormType">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
                     <option value="Hurricane"></option>
