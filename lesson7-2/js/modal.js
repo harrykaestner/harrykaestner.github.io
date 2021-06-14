@@ -1,4 +1,3 @@
-
 <script type="text/javascript">
 function getCookie(c_name) {
 if(document.cookie.length>0)
