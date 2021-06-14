@@ -1,4 +1,4 @@
-// Code for get date in a nice format
+//Code for get date in a nice format
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -10,12 +10,12 @@ let dayNum = parseInt(date.getDay());
 
 document.getElementById("currentDate").innerHTML = days[dayNum] + ", " + dateNum + " " + months[month] + " " + year + ".";
 
-// Code for responsive navigation
+//Code for responsive navigation
 const hamButton = document.querySelector('#hamBtn');
 const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);
 
-// If the actual day is Friday displays the banner
+//If the actual day is Friday displays the banner
 if (dayNum == 5){
     let aside = document.getElementById("aside");
     aside.style.display = "block";
