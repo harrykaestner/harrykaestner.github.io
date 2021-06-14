@@ -15,6 +15,26 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
+<div class="modal hidden">
+    <div class="modal-inner">
+        <div class="close-modal">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-content">
+            <div class="modal-title">
+                Personalize Your Experience
+            </div>
+            <div class="description-text">
+                Please enter your name for a more personal experience.
+            </div>
+            <div id="modal-feedback"></div>
+            <input type="text" id="modal-name-input">
+            <button id="modal-name-submit" onclick="addNameLocal()">Submit</button>
+        </div>
+        <div class="close-modal" id="modal-close-text">close</div>
+    </div>
+</div>
+
 <body>
     <aside id="aside" style="color: darkred">
         <p>Saturday = Preston Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
