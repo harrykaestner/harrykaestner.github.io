@@ -5,7 +5,7 @@
 
     .gallery {
         display: grid;
-        grid-gap: em;
+        grid-gap: 1em;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-around;
         padding: .5em 3em;
