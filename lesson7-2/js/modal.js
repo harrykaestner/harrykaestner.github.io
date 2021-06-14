@@ -1,102 +1,70 @@
-/ display welcome banner if a name if losded in local memory
-document.addEventListener('DOMContentLoaded', function() {
-    // get the name from local storage
-    let usersName = localStorage.getItem('uName');
-        // calls and passes name to banner function
-        welcomeBanner(usersName);
- }, false);
 
-function welcomeBanner(name) {
-    // random greeting list
-    let greetingArray = [
-        'we\'re so glad you\'re here',
-        'have a wonderful day',
-        'we hope you have sunshine',
-        'you are the best',
-        'some clouds look like puppies',
-        'it\'s ok to dance in the rain',
-        'stay dry and stay safe',
-        'you\'re a real gem'
-    ];
-
-    let b = document.getElementsByClassName('welcome-banner')[0];
-    // check to see if there is a name in local memory
-    if (name != null) {
-        // get a random int between 0 and the length of the array
-        let getNum = Math.floor(Math.random() * greetingArray.length);
-        // addes the text to the welcome banner
-        b.textContent = `Hey ${name}, ${greetingArray[getNum]}! It's been ${compareDateTime()} days since your last visit.`;
-        // unhides the welcome banner
-        b.classList.remove('hidden');
-    } else {
-        // just adds a day count if there was no name entered
-        b.textContent = `Hey, it's been ${compareDateTime()} days since your last visit.`;
-        // unhides the welcome banner
-        b.classList.remove('hidden');
-    }
+<script type="text/javascript">
+function getCookie(c_name) {
+if(document.cookie.length>0)
+{
+c_start=document.cookie.indexOf(c_name + "=");
+if (c_start!=-1)
+{
+c_start=c_start + c_name.length+1;
+c_end=document.cookie.indexOf(";",c_start);
+if (c_end==-1) c_end=document.cookie.length;
+return unescape(document.cookie.substring(c_start,c_end));
 }
-
-// triggers the modal to open / close
-function triggerModal() {
-    document.getElementsByClassName('modal')[0].classList.toggle('hidden');
-    document.getElementById('modal-feedback').innerHTML = '';
 }
-
-// listens for clicks and closes the name modal
-document.getElementsByClassName('close-modal')[0].addEventListener('click', function() {
-    triggerModal();
-});
-document.getElementsByClassName('close-modal')[1].addEventListener('click', function() {
-    triggerModal();
-});
-
-// adds date to local memory
-function addDateLocal() {
-    // creates var for current date/time
-    let dateTime = new Date();
-    // adds visit time to local storage
-    localStorage.setItem('lastVisitDate', dateTime);
+return ""; }
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate()+expiredays);
+document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+var x = document.cookie(username);
+alert("sfs");
+document.write(x); }
+function showmessage ()
+{
+var days=421;
+nextvisitmsg="Hi Welcome back ! Your last visit was on [displaydate]";
+var dat=new Date();
+if(getCookie("visit")==""){
+setCookie("visit", dat, days);
+document.write("you are visting this website for the first time ");
 }
-
-// compares the stored and current date
-function compareDateTime() {
-    // gets value of stored date
-    let storedDate = localStorage.getItem('lastVisitDate');
-
-    // ** this is here to test functionality of past dates ** //
-    // storedDate = new Date('06/03/2020');
-
-    if (storedDate != null) {
-        // convert stored date to an active date
-        let convertedStoredDate = new Date(storedDate);
-        // gets current date / time
-        let currentDate = new Date();
-        // gets difference between old and new dates
-        let diff = currentDate.getTime() - convertedStoredDate.getTime();
-        // reset the local (last visit) date
-        addDateLocal();
-        // returns number of days difference, rounded down
-        return Math.floor(diff / (1000 * 3600 * 24));
-    } else {
-        // set the local (last visit) date
-        addDateLocal();
-        return 0;   
-    }
+else
+{
+var p=getCookie("visit");
+var pp=Date.parse(p);
+var now = new Date();
+now.setTime(pp);
+var day = new Array("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat");
+var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var nd = now.getDate();
+var ny = now.getDay();
+ny = day[ny];
+var nm = now.getMonth();
+nm = month[nm];
+yy = now.getFullYear();
+var hh = now.getHours();
+var ampm = "AM";
+if(hh >= 12) {ampm = "PM"}
+var mins = now.getMinutes();
+var secs = now.getSeconds();
+var dispDate = ny + ", " + nm + " " + nd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm;
+document.write(nextvisitmsg.replace("\[displaydate\]", dispDate))
 }
-
-// function adds users name to local memory
-function addNameLocal() {
-    let nameEntered = document.getElementById('modal-name-input').value.trim();
-    // if a valid name is entered, add it to local memory
-    if (nameEntered != "") {
-        // adds name to local storage
-        localStorage.setItem('uName', nameEntered);
-        // name saved growl
-        document.getElementById('modal-feedback').innerHTML = '<span class="green">name saved<span>';
-        // calls banner function
-        welcomeBanner(nameEntered);
-    } else {
-        // name not valid growl
-        document.getElementById('modal-feedback').innerHTML = '<span class="red">enter a valid name<span>';
-    }
+setCookie("visit", dat, days); }
+function ctck()
+{
+var sds = document.getElementById("dum");
+if(sds == null){
+alert("You are using a free package.\n You are not allowed to remove the tag.\n");
 }
+var sdss = document.getElementById("dumdiv");
+if(sdss == null){
+alert("You are using a free package.\n You are not allowed to remove the tag.\n");
+} } document.onload="ctck()"; showmessage ();
+</script>
+<div style="font-size: 10px;color: #dadada;" id="dumdiv">
+<a href="https://www.hscripts.com" id="dum" style="text-decoration:none;color: #dadada;">©h</a>
+</div>
+
