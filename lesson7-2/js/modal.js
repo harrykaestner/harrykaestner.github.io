@@ -1,25 +1,3 @@
-// display welcome banner if a name if losded in local memory
-document.addEventListener('DOMContentLoaded', function() {
-        // get the name from local storage
-        let usersName = localStorage.getItem('uName');
-            // calls and passes name to banner function
-            welcomeBanner(usersName);
-     }, false);
-    
-    function welcomeBanner(name) {
-        // random greeting list
-        let greetingArray = [
-            'we\'re so glad you\'re here',
-            'have a wonderful day',
-            'we hope you have sunshine',
-            'you are the best',
-            'some clouds look like puppies',
-            'it\'s ok to dance in the rain',
-            'stay dry and stay safe',
-            'you\'re a real gem'
-        ];
-    
-        let b = document.getElementsByClassName('welcome-banner')[0];
         // check to see if there is a name in local memory
         if (name != null) {
             // get a random int between 0 and the length of the array
@@ -34,8 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // unhides the welcome banner
             b.classList.remove('hidden');
         }
-    }
-    
+     
     // triggers the modal to open / close
     function triggerModal() {
         document.getElementsByClassName('modal')[0].classList.toggle('hidden');
