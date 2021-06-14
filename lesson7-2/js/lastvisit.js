@@ -56,6 +56,4 @@
  
  }
  
- {
  lastvisit.showmessage();
-}
