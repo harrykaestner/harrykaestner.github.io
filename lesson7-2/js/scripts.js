@@ -114,5 +114,7 @@ if ('IntersectionObserver' in window) {
  }
  
  lastvisit.showmessage();
+
+{}
             
             
