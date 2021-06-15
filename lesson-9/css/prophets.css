@@ -20,6 +20,7 @@ h1, footer{
   align-items: center;
   padding: 1em;
   max-width: 100%;
+  filter: drop-shadow(0px 0px 14px #444);
 }
 
 section{
@@ -36,4 +37,5 @@ section img{
   width: 10em;
   margin: .5em;
   border-radius: .3em;
+  filter: drop-shadow(0px 0px 8px #222);
 }
