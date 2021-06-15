@@ -1,47 +1,59 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Lora', serif;
-}
-
-h1, footer{
+header {
   text-align: center;
-  background-color: rgb(36, 74, 196);
-  color: white;
-  padding: .5em .1em;
+  color: #081145;
+  font-family: Helvetica, sans-serif, serif;
+  font-size: 1.5rem;
 }
 
-.cards{
+.cards {
+  display: grid;
+  grid-gap: 2px;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  border: 10px solid #333;
+  box-shadow: 0px 0px 26px 1px #084140;
+  background-color: #084140;
+}
+
+section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  max-width: 100%;
-  max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    filter: drop-shadow(0px 0px 14px #444);
+  justify-content: center;
+  background-color: #f3f3f3;
+  line-height: 0.5px;
+  color: #333;
 }
 
-section{
-  margin:.5em;
-  width: 17em;
-  padding: 1em;
-  background-color: rgba(36, 74, 196,.5);
-  border-radius: .3em;
+h2, img, p {
+  align-self: center;
+}
+
+h2 {
+  margin: 1.5rem;
+}
+
+img {
+  max-width: 65%;
+  border: 1.5px solid #333;
+  margin: 1rem 0px 2rem;
+}
+
+footer {
   text-align: center;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
 }
 
-section img{
-  width: 10em;
-  margin: .5em;
-  border-radius: .3em;
-  filter: drop-shadow(0px 0px 8px #222);
+/* medium size query*/
+@media only screen and (min-width: 30rem) {
+  .cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Lg media query*/
+@media only screen and (min-width: 60rem) {
+  .cards {
+      grid-template-columns: repeat(4, 1fr);
+  }
 }
