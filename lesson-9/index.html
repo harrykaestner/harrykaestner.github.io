@@ -1,62 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!doctype html>
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Weather Today | Home</title>
-  <link rel="shortcut icon" href="favicon.ico">
-  <meta name="author" content="Harry Kaestner">
-  <link rel="stylesheet" href="css/normalize.css">
-  <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
-</head>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Harry Kaestner">
+    <meta name="description" content="Assignment portal Harry Kaestner in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="/lesson1/favicon.ico">
+    <title>WDD 230 Assignments | Harry Kaestner | BYU-I</title>     
+    <link rel="stylesheet" href="/lesson2/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lesson2/css/small1.css">
+    <link rel="stylesheet" href="/lesson2/css/medium1.css">
+          
+    </head>
 <body>
-  <aside id="aside" style="display: none;">
-    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-  </aside>
-  <header>
-    <picture>
-      <source media="(max-width: 799px)" srcset="images/logo96w.png">
-      <source media="(min-width: 800px)" srcset="images/logo128w.png">
-      <img src="images/logo128w.png" alt="Real Weather Today logo">
-    </picture>
-    <div class="title">
-      <h1>Real Weather Today</h1>
-      <h3>Whenever and Wherever You Need</h3>
-    </div>
-  </header>
-  <nav>
-    <ul class="navigation">
-      <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="preston-6.html" >Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery-7.html">Gallery</a></li>
-    </ul>
-  </nav>
-  <main>
-    <div class="cards">
-    </div>
-  </main>
-  <footer>
-    <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
-    <p><span id="currentDate"></span></p>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Montserrat:300,400,700']
-      }
-    });
-  </script>
-  <script src="js/scripts.js"></script>
-</body>
+    <div class="container">
+        <header>
+            <img src="https://cdn.glitch.com/98f37eed-1952-4ee9-aeaf-6aa0b325c815%2Fthumbnails%2FIMG_2322.JPG?1619198979989" alt="My Family Picture" class="header-img">
+            <h1>Harry Kaestner</h1>
+        </header>
+            <main>
+                    <h2>WDD 230: Assignment Portal</h2>
+                    <ul>
+                            <li>Lesson 1: <a href="https://harrykaestner.github.io/lesson1/index.html" target="_blank">Portal Assignment </a></li>
+                            <li>Lesson 2: <a href="https://harrykaestner.github.io/lesson2/design-principles.html" target="_blank">Design Principles </a></li>
+                            <li>Lesson 3: <a href="https://harrykaestner.github.io/lesson3/index.html" target="_blank">Website Planning Document </a></li>
+                            <li>Lesson 4: <a href="https://harrykaestner.github.io/lesson4/preston-4.html" target="_blank">Preston Town Page </a></li>
+                            <li>Lesson 5: <a href="https://harrykaestner.github.io/lesson5/bom.html" target="_blank">Assignment 5.1</a></li>
+                            <li>Lesson 5: <a href="https://harrykaestner.github.io/lesson5/preston-5.html" target="_blank">Assignment 5.2</a></li>
+                            <li>Lesson 6: <a href="https://harrykaestner.github.io/lesson6/preston-6.html" target="_blank">Preston-6</a></li>
+                            <li>Lesson 7: <a href="https://harrykaestner.github.io/lesson7/lazyload.html" target="_blank">Lazyload</a></li>
+                            <li>Lesson 7-2: <a href="https://harrykaestner.github.io/lesson7-2/gallery-7.html" target="_blank">Gallery</a></li>
+                            <li>Lesson 8-1: <a href="https://harrykaestner.github.io/lesson8/tablebuild.html" target="_blank">Tablebuild</a></li>
+                            <li>Lesson 8-2: <a href="https://harrykaestner.github.io/lesson8/stormcenter.html" target="_blank">Stormcenter</a></li>
+                            <li>Lesson 8-3: <a href="https://harrykaestner.github.io/lesson8/thanks.html" target="_blank">Thanks</a></li>
 
-</html>
+                    </ul>
+                </main>
+                <footer>
+                    <p>&copy; <span id="theyear"></span> | Harry Kaestner | Idaho, USA | <a target="_blank" style="color:darkred;"
+                            href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                    <p>Last Updated: <span id="lastmod"></span></p>
+                </footer>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                        families: ['Montserrat:300,400,700']
+                        }
+                    });
+            </script>
+            <script src="/lesson1/js/script2.js"></script>
+        </body>
+        </html>
