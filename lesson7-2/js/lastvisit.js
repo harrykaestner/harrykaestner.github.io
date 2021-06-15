@@ -13,11 +13,9 @@ function timeSinceLastVisit() {
             return `It has been ${daysSinceLastVisit} day since your last visit!`;
         } else {
             return `It has been ${daysSinceLastVisit} days since your last visit!`;
-        }
-        
+        }       
     }
 }
-
 footer.innerHTML = timeSinceLastVisit();
 
 
