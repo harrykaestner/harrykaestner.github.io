@@ -62,7 +62,6 @@
         background-color: #A6B1E1;
         color: darkred;
         padding: .5em;
-        text-shadow: 2px 2px 2px #333;
     }
     .forecast table tr td{
         padding: .5em;
@@ -75,9 +74,9 @@
         border-left: none;
     }
 
-    .forecast img{
-        min-width: 7em;
-        background-color: #efe;
+    .forecast .fa-sun{
+        color: #FAFF7F;
+        text-shadow: 3px 5px 5px #888;
     }
 
     .blog img {
