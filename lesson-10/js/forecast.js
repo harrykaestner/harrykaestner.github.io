@@ -1,18 +1,3 @@
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=739476ad4754b9969a96d0127fc157a7";
-fetch(weatherURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
- 
-    document.getElementById('currentTemp').textContent = jsObject.main.temp;
-    document.getElementById('highTemp').textContent = jsObject.main.temp_max;
-    document.getElementById('windChill').textContent = windChill(jsObject.main.temp, jsObject.wind.speed);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('windSpeed').textContent = jsObject.wind.speed;
-
-
-  });
-
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=739476ad4754b9969a96d0127fc157a7";
 fetch(forecastURL)
     .then((response) => response.json())
@@ -34,9 +19,12 @@ fetch(forecastURL)
         for (let i = 0; i < peaksforecast.length; i++) {
             const imagesrc = 'https://openweathermap.org/img/w/' + peaksforecast[i].weather[0].icon + '.png';
             const desc = peaksforecast[i].weather[0].description;
-            document.getElementById(`icon${i+1}`).setAttribute('src', imagesrc);
-            document.getElementById(`icon${i+1}`).setAttribute('alt', desc);
-            document.getElementById(`day${i+1}`).innerHTML = `${Math.round(peaksforecast[i].main.temp)}&#8457`;
+            let image = document.createElement('img');
+            let imageTD = document.getElementById(`icon${i+1}`);
+            image.setAttribute('src', imagesrc);
+            image.setAttribute('alt', desc);
+            imageTD.appendChild(image);
+            document.getElementById(`day${i+1}`).innerHTML = `${Math.round(peaksforecast[i].main.temp)} &#8457`;
         }
         
 });

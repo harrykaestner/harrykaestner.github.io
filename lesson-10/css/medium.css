@@ -165,20 +165,4 @@
         grid-column: 2 / -1;
         width: 90%;
     }
-
-    /* switches image/text order of the second town */
-.cards section:nth-child(odd) h2 {
-    grid-column: 2 / -1;
-}
-.cards section:nth-child(odd) h4 {
-    grid-column: 2 / -1;
-}
-.cards section:nth-child(odd) p {
-    grid-column: 2 / -1;
-}
-.cards section:nth-child(odd) img {
-    grid-row: 1 / 6;
-    grid-column: 1 / 2;
-    width: 90%;
-}
 }

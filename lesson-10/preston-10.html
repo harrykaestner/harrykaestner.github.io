@@ -61,25 +61,25 @@
             <h3>5 Day Forecast</h3>
             <table>
                 <tr>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                    <th>Sun</th>
+                    <th id="weekday1"></th>
+                    <th id="weekday2"></th>
+                    <th id="weekday3"></th>
+                    <th id="weekday4"></th>
+                    <th id="weekday5"></th>
                 </tr>
                 <tr>
-                    <td><i class="fas fa-sun fa-4x"></i></td>
-                    <td><i class="fas fa-sun fa-4x"></i></td>
-                    <td><i class="fas fa-sun fa-4x"></i></td>
-                    <td><i class="fas fa-sun fa-4x"></i></td>
-                    <td><i class="fas fa-sun fa-4x"></i></td>
+                    <td id="icon1"></td>
+                    <td id="icon2"></td>
+                    <td id="icon3"></td>
+                    <td id="icon4"></td>
+                    <td id="icon5"></td>
                 </tr>
                 <tr>
-                    <td>89°F</td>
-                    <td>87°F</td>
-                    <td>78°F</td>
-                    <td>75°F</td>
-                    <td>72°F</td>
+                    <td><span id="day1"></span></td>
+                    <td><span id="day2"></span></td>
+                    <td><span id="day3"></span></td>
+                    <td><span id="day4"></span></td>
+                    <td><span id="day5"></span></td>
                 </tr>
             </table>
         </article>
@@ -133,7 +133,8 @@
         });
     </script>
     <script src="js/api.js"></script>
-     <script src="js/windchill.js"></script>
-     <script src="js/scripts.js" ></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/scripts.js" defer></script>
 </body>
 </html>
