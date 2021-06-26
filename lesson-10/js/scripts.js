@@ -97,8 +97,6 @@ fetch(requestURL)
                 card.appendChild(population);
                 card.appendChild(rainfall);
                 card.appendChild(img);
-
-                document.querySelector('div.cards').appendChild(card);
             }
         }
 
