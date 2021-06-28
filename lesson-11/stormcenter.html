@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather Today | Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="author" content="Harry Kaestner">
+    <meta name="description" content="WDD 230 - Stormcenter assignment">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside id="aside" style="color: darkred">
+        <p>Saturday = Preston Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </aside>
+    <header>
+        <picture>
+            <source media="(max-width: 799px)" srcset="images/logo96w.png">
+            <source media="(min-width: 800px)" srcset="images/logo128w.png">
+            <img src="images/logo128w.png" alt="Real Weather Today logo">
+        </picture>
+        <div class="title">
+            <h1>Real Weather Today</h1>
+            <h3>Whenever and Wherever You Need</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <div class="input-box">
+                <label for="fullName">Full Name*
+                    <input type="text" name="fullName" id="fullName" placeholder="Harry Kaestner" pattern="[A-Za-z]{5}*" required>
+                </label>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="adress@yourmail.com" minlength="3" maxlength="64" required>
+            </div>
+            <div class="input-box">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel"  name="phoneNumber" id="phoneNumber" placeholder="###-###-####" required>
+            </div>
+            <div class="input-box">
+                <label for="zipCode">Zip Code</label>
+                <input type="number" id="zipCode" placeholder="#####" required>
+            </div>
+            <div class="input-box">
+                <label for="stormDate">Storm Date</label>
+                <input type="date" name="stormDate" id="stormDate" value="2021-06-10" min="2021-01-01" max="2100-01-01">
+            </div>
+            <div class="input-box">
+                <label for="storm">Storm Type</label>
+                    <input type="text" list="storms" name="storm" id="storm">
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+            </div>
+            <div class="input-box">
+                    <label for="storming">Storm Severity
+                        <input type="range" name="storming" id="storming" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    </label>       
+                    <span id="ratingvalue">5</span>
+            </div>
+            <div class="input-box">
+                <label for="stormRegion">Storm Region</label>
+                <select name="stormRegion" id="stormRegion">
+                    <option selected="selected" disabled>Select Region ...</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>User In-Danger</legend>
+                <div class="radio">
+                    <input type="radio" id="yes" name="inDanger" value="yes" class="radio">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="maybe" name="inDanger" value="maybe" class="radio">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="no" name="inDanger" value="no" class="radio">
+                    <label for="no">No</label>
+                </div>
+            </fieldset>
+            <div class="input-box">
+                <label for="addInfo">Additional Information</label>
+                <textarea name="addInfo" id="addInfo" cols="10" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Report Event" style="color: black" class="send">
+        </form>
+    </main>
+    <footer>
+        <script src="js/lastvisit.js"></script>
+        <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Montserrat:300,400,700']
+            }
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
