@@ -25,7 +25,7 @@ fetch(url)
   });
 
 
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=c704063b98daaa9a962869e196e217ee';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=739476ad4754b9969a96d0127fc157a7';
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -37,7 +37,7 @@ fetch(apiURL)
   });
 
 
-const apiURLforecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=c704063b98daaa9a962869e196e217ee';
+const apiURLforecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=739476ad4754b9969a96d0127fc157a7';
 fetch(apiURLforecast)
   .then((response) => response.json())
   .then((jsObject) => {
