@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Terms and Conditions for Real Weather Today</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/public/livelink/css/livelink.css" />
-<meta name="robots" content="noindex" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10195353-21"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-10195353-21');
-    </script>
-<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
-<body>
-
-<div class="page">
-<input id="en" checked="checked" type="radio" name="languages" />
-<header class="header">
-<div class="container">
-<span class="logo">Terms and Conditions for Real Weather Today</span>
-</div>
-</header>
-<div class="subnav">
-<div class="container">
-<input class="menu-btn" type="checkbox" id="menu-btn" />
-<label class="menu-icon" for="menu-btn"><span class="navicon"></span> <span class="label-name">Languages</span></label>
-<ul class="menu">
-<li class="en language_label" label-language="en">
-<label for="en">English</label>
-</li>
-</ul>
-
-</div>
-</div>
-
-
-<section>
-<div class="en section_container" section-language="en">
-<div id="md_en" data-target="out_en" class="agreement_md"><h1>Terms and Conditions</h1>
+<h1>Terms and Conditions</h1>
 <p>Last updated: June 30, 2021</p>
 <p>Please read these terms and conditions carefully before using Our Service.</p>
 <h1>Interpretation and Definitions</h1>
@@ -53,10 +11,10 @@
 <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
 </li>
 <li>
-<p><strong>Country</strong> refers to: Utah, United States</p>
+<p><strong>Country</strong> refers to: Idaho,  United States</p>
 </li>
 <li>
-<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Weatherlicious.</p>
+<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Real Weather Today.</p>
 </li>
 <li>
 <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
@@ -120,62 +78,5 @@ You agree that the original English text shall prevail in the case of a dispute.
 <h1>Contact Us</h1>
 <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
 <ul>
-<li>By email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c78697f784c69616d6560226f6361">[email&#160;protected]</a></li>
+<li>By visiting this page on our website: <a href="www.realweathertoday.com" rel="external nofollow noopener" target="_blank">www.realweathertoday.com</a></li>
 </ul>
-</div>
-<div id="out_en" class="agreement_output"></div>
-</div>
-</section>
-
-
-<footer>
-<div class="container">
-Terms and Conditions for Real Weather Today
-</div>
-</footer>
-
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="/public/livelink/vendors/jquery.min.js"></script>
-<script type="text/javascript" defer>
-    $(document).ready(function () {
-        let language_label = $('.language_label');
-        function selectFirstLanguage() {
-            language_label.each(function(index, element) {
-                let language = $(element).attr('label-language');
-                selectLanguage(language);
-                return false;
-            });
-        }
-        // Language selection function
-        function selectLanguage(language) {
-            language_label.removeClass('active');
-            $('.section_container').removeClass('active');
-
-            $(".language_label[label-language='" + language +"']").addClass('active');
-            $(".section_container[section-language='" + language +"']").addClass('active');
-
-            $("html, body").animate({scrollTop: 0}, "slow");
-        }
-        // Automatically select the first language
-        selectFirstLanguage();
-
-        $('.language_label').click(function () {
-          language_label.click(function () {
-              var labelLanguage = $(this).attr('label-language');
-              selectLanguage(labelLanguage);
-          });
-        });
-    });
-</script>
-<script type="text/javascript">
-    "use strict";
-    window.LCG_TRACKING_APPLICATION = "termsfeed-livelink";
-    window.LCG_TRACKING_ENVIRONMENT = "production";
-    window.LCG_TRACKING_EPOCH = "2020-e01";
-</script>
-<script src="/track/v1/r/js-code" type="text/javascript" async="true"></script>
-<script src="/track/v1/r/js-data" type="text/javascript" async="true"></script>
-<img src="/track/v1/px" style="position:fixed;right:0px;bottom:0px;display:none;" />
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'66783c9a4e66399b',m:'1df83f9259f7640a3f0967611be20f30d054d0ac-1625064938-1800-AQrJgaFBkXmLJ9dkdpQs92H7oyI1w+xNxT1n+61OZyX4FZ5rnglXlOVKCG66459j/c24bb+wZe6ObOLAT2d58aXIHh9bLk5eHK6MWONYPNlrG2TlkQuSyOlv6nMnHKD57bQAOLDxhfLJh/3NJ52bmTG4mdSGhVTH7EvWD352rbDl',s:[0xa3d7bb6a58,0x2ba818137e],}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66783c9a4e66399b","token":"24d38a5cb57a4c87ad9f5238132ec4c3","version":"2021.6.0","si":10}'></script>
-</body>
-</html>
