@@ -41,7 +41,6 @@ fetch(apiURLforecast)
   .then((response) => response.json())
   .then((jsObject) => {
     const forecast = jsObject['list'];
-    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     for (let i = 3; i < forecast.length; i += 8) {
       document.getElementById(`imgForecast${i}`).setAttribute('src', "https://openweathermap.org/img/w/" + forecast[i].weather[0].icon + ".png");
