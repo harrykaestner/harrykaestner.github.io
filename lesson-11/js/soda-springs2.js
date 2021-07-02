@@ -1,3 +1,29 @@
+const url = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(url)
+  .then((response) => response.json())
+  .then((jsObject) =>{
+
+    const list = document.getElementById('listEvents');
+
+    for(let i = 0; i < jsObject.towns.length; i++){
+      
+      if (jsObject.towns[i].name == "Soda Springs") {
+        
+        for (let j = 0; j < jsObject.towns[i].events[j].length; j++) {
+          
+          let event = document.createElement('li');
+          event.textContent = jsObject.towns[i].events[j];
+          list.appendChild(event);
+          console.log(jsObject.towns[i].events[j]);
+          
+        }
+
+      }
+      
+    }
+  });
+
 const forecastURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=739476ad4754b9969a96d0127fc157a7";
 fetch(forecastURL)
     .then((response) => response.json())
