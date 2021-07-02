@@ -2,12 +2,6 @@
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-let day = 0;
-peaksforecast.forEach(forecast => {
-    let d = new Date(forecast.dt_txt);
-    document.getElementById(`weekday${day+1}`).textContent = weekdays[d.getDay()];
-    day++;
-
 let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();
