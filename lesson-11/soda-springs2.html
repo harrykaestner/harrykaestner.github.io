@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Weather Today | Home</title>
+    <title>Real Weather Today | Soda Springs</title>
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="author" content="Harry Kaestner">
-    <meta name="description" content="WDD 230 - Preston assignment">
+    <meta name="description" content="WDD 230 - Soda Springs assignment">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/small.css">
@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <aside id="aside" style="color: darkred">
-        <p>Saturday = Preston Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    <aside id="aside"  style="color: darkred">
+        <p>Saturday = Soda Springs Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </aside>
     <header>
         <picture>
@@ -32,26 +32,26 @@
         <ul class="navigation">
             <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html" class="active">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html" class="active">Soda Springs</a></li>
             <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h2>
+        <h2>Soda Springs</h2>
         <article class="hero">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/prestonSmall.jpg">
-                <source media="(max-width: 600px)" srcset="images/prestonMedium.jpg">
-                <source media="(max-width: 800px)" srcset="images/prestonLarge.jpg">
-                <img src="images/prestonLarge.jpg" alt="hero image">
+                <source media="(max-width: 400px)" srcset="images/sodaSpringsSmall.jpg">
+                <source media="(max-width: 600px)" srcset="images/sodaSpringsMedium.jpg">
+                <source media="(max-width: 800px)" srcset="images/sodaSpringsLarge.jpg">
+                <img src="images/sodaSpringsLarge.jpg" alt="hero image">
             </picture>
             <div class="hero-summary">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="curr"></span></p>
-                <p>High: <span id="tempH"></span> °F</p>
+                <p>High: <span id="tempH"></span>°F</p>
                 <p>Wind Chill: <span id="wChill"></span>°F</p>
                 <p>Humidity: <span id="hum"></span>%</p>
                 <p>Wind Speed: <span id="wSpeed"></span> mph</p>
@@ -85,20 +85,27 @@
         </article>
         <article class="blog">
             <picture>
-                <source media="(max-width: 799px)" srcset="images/iguazu230w.jpg">
-                <source media="(min-width: 800px)" srcset="images/iguazu280w.jpg">
-                <img src="images/iguazu280w.jpg" alt="a picture of Cataratas do Iguaçu">
+                <source media="(max-width: 799px)" srcset="images/community377w.jpg">
+                <source media="(min-width: 800px)" srcset="images/community538w.jpg">
+                <img src="images/community538w.jpg" alt="a picture of community meeting">
             </picture>
-            <h3>Iguazu Falls</h3>
+            <h3>Soda Springs History</h3>
             <p class="author" style="color: darkred">by Harry Kaestner</p>
             <p>
-                Iguazú Falls or Iguaçu Falls (Spanish: Cataratas del Iguazú [kataˈɾatas ðel iɣwaˈsu]; Guarani: Chororõ Yguasu [ɕoɾo'ɾõ ɨɣʷa'su]; Portuguese: Cataratas do Iguaçu [kataˈɾatɐs du iɡwaˈsu]) are waterfalls of the Iguazu River on the border of the Argentine province of Misiones and the Brazilian unit of Paraná. Together, they make up the largest waterfall in the world. The falls divide the river into the upper and lower Iguazu. The Iguazu River rises near the heart of the city of Curitiba. For most of its course, the river flows through Brazil; however, most of the falls are on the Argentine side. Below its confluence with the San Antonio River, the Iguazu River forms the border between Argentina and Brazil ...
+Soda Springs is a city in Caribou County, Idaho, United States. Its population was 3,058 at the 2010 census.
+The city has been the county seat of Caribou County[5] since the county was organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. 
+The city is named for the hundreds of natural springs of carbonated water that are located in and around the city ...
             </p>
-            <a href="https://en.wikipedia.org/wiki/Iguazu_Falls" target="_blank" style="color: darkred">continue to full article</a>
+            <a href="https://en.wikipedia.org/wiki/Soda_Springs,_Idaho" target="_blank" style="color: darkred">continue to full article</a>
+        </article>
+        <article class="events">
+            <h3>Upcoming Events</h3>
+            <ul id="listEvents">
+            </ul>
         </article>
         <article class="contact-info">
             <iframe class="map" id="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28163.73619399447!2d-111.9033210029279!3d42.10001505535372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590175225846!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.9129900726!2d-111.62379142127332!3d42.66147063499639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1593746733189!5m2!1sen!2sus"
                 width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0">
             </iframe>
@@ -137,5 +144,6 @@
     <script src="js/forecast2.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/scripts.js"></script>
+    
 </body>
 </html>
