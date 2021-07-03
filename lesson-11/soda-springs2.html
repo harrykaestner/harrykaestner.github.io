@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Weather Today | Fish Haven</title>
+    <title>Real Weather Today | Soda Springs</title>
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="author" content="Harry Kaestner">
-    <meta name="description" content="WDD 230 - Fish Haven assignment">
+    <meta name="description" content="WDD 230 - Soda Springs assignment">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/small.css">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <aside id="aside"  style="color: darkred">
-        <p>Saturday = Fish Haven Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        <p>Saturday = Soda Springs Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </aside>
     <header>
         <picture>
@@ -33,20 +33,20 @@
             <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html" class="active">Fish Haven</a></li>
+            <li><a href="soda-springs.html" class="active">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Fish Haven</h2>
+        <h2>Soda Springs</h2>
         <article class="hero">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/fishHavenSmall.jpg">
-                <source media="(max-width: 600px)" srcset="images/fishHavenMedium.jpg">
-                <source media="(max-width: 800px)" srcset="images/fishHavenLarge.jpg">
-                <img src="images/fishHavenLarge.jpg" alt="hero image">
+                <source media="(max-width: 400px)" srcset="images/sodaSpringsSmall.jpg">
+                <source media="(max-width: 600px)" srcset="images/sodaSpringsMedium.jpg">
+                <source media="(max-width: 800px)" srcset="images/sodaSpringsLarge.jpg">
+                <img src="images/sodaSpringsLarge.jpg" alt="hero image">
             </picture>
             <div class="hero-summary">
                 <h3>Weather Summary</h3>
@@ -60,38 +60,43 @@
         <article class="forecast">
             <h3>5 Day Forecast</h3>
             <table>
-                
                 <tr>
-                    <td><img src="imgForecast3" alt="" id="imgForecast3"></td>
-                    <td><img src="imgForecast11" alt="" id="imgForecast11"></td>
-                    <td><img src="imgForecast19" alt="" id="imgForecast19"></td>
-                    <td><img src="imgForecast27" alt="" id="imgForecast27"></td>
-                    <td><img src="imgForecast35" alt="" id="imgForecast35"></td>
+                    <th id="weekday1"></th>
+                    <th id="weekday2"></th>
+                    <th id="weekday3"></th>
+                    <th id="weekday4"></th>
+                    <th id="weekday5"></th>
                 </tr>
                 <tr>
-                    <td><span id="tempForecast3"></span>°F</td>
-                    <td><span id="tempForecast11"></span>°F</td>
-                    <td><span id="tempForecast19"></span>°F</td>
-                    <td><span id="tempForecast27"></span>°F</td>
-                    <td><span id="tempForecast35"></span>°F</td>
+                    <td id="icon1"></td>
+                    <td id="icon2"></td>
+                    <td id="icon3"></td>
+                    <td id="icon4"></td>
+                    <td id="icon5"></td>
+                </tr>
+                <tr>
+                    <td><span id="day1"></span></td>
+                    <td><span id="day2"></span></td>
+                    <td><span id="day3"></span></td>
+                    <td><span id="day4"></span></td>
+                    <td><span id="day5"></span></td>
                 </tr>
             </table>
         </article>
         <article class="blog">
             <picture>
-                <source media="(max-width: 799px)" srcset="images/Fish_Haven01.jpg">
-                <source media="(min-width: 800px)" srcset="images/Fish_Haven01.jpg">
-                <img src="images/Fish_Haven01" alt="a picture of Fish Haven">
+                <source media="(max-width: 799px)" srcset="images/community377w.jpg">
+                <source media="(min-width: 800px)" srcset="images/community538w.jpg">
+                <img src="images/community538w.jpg" alt="a picture of community meeting">
             </picture>
-            <h3>Fish Haven History</h3>
+            <h3>Soda Springs History</h3>
             <p class="author" style="color: darkred">by Harry Kaestner</p>
             <p>
-FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake.
-In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.
-But they don't live there. It's different living in Fish Haven.
-The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains...
+Soda Springs is a city in Caribou County, Idaho, United States. Its population was 3,058 at the 2010 census.
+The city has been the county seat of Caribou County[5] since the county was organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. 
+The city is named for the hundreds of natural springs of carbonated water that are located in and around the city ...
             </p>
-            <a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents" target="_blank" style="color: darkred">continue to full article</a>
+            <a href="https://en.wikipedia.org/wiki/Soda_Springs,_Idaho" target="_blank" style="color: darkred">continue to full article</a>
         </article>
         <article class="events">
             <h3>Upcoming Events</h3>
@@ -100,7 +105,7 @@ The little town sits just on the Idaho side of U.S. Highway 89 tucked in between
         </article>
         <article class="contact-info">
             <iframe class="map" id="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5926.479391985924!2d-111.4004906719716!3d42.038040166839274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1593747404500!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.9129900726!2d-111.62379142127332!3d42.66147063499639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1593746733189!5m2!1sen!2sus"
                 width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0">
             </iframe>
@@ -135,7 +140,8 @@ The little town sits just on the Idaho side of U.S. Highway 89 tucked in between
             }
         });
     </script>
-    <script src="js/fish-haven.js"></script>
+    <script src="js/api2.js"></script>
+    <script src="js/forecast2.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/scripts.js"></script>
 </body>
