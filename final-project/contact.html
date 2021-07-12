@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rexburg Chamber of Commerce | Contact</title>
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="author" content="Harry Kaestner">
-    <meta name="description" content="WDD 230 - Soda Springs assignment">
+    <meta name="description" content="WDD 230 - Stormcenter assignment">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
+
 <body>
-    <aside id="aside"  style="color: darkred">
-        <p>Saturday = Soda Springs Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    <aside id="aside" style="color: darkred">
+        <p>Saturday = Preston Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </aside>
     <header>
         <picture>
@@ -39,96 +41,80 @@
         </ul>
     </nav>
     <main>
-        <h2 class="page-title">Soda Springs Idaho</h2>
-        <article class="hero">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/sodaSpringsSmall.jpg">
-                <source media="(max-width: 600px)" srcset="images/sodaSpringsMedium.jpg">
-                <source media="(max-width: 800px)" srcset="images/sodaSpringsLarge.jpg">
-                <img src="images/sodaSpringsLarge.jpg" alt="hero image">
-            </picture>
-            <div class="hero-summary">
-                <h3>Weather Summary</h3>
-                <p>Currently: <span id="curr"></span></p>
-                <p>High: <span id="tempH"></span>°F</p>
-                <p>Wind Chill: <span id="wChill"></span>°F</p>
-                <p>Humidity: <span id="hum"></span>%</p>
-                <p>Wind Speed: <span id="wSpeed"></span> mph</p>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <div class="input-box">
+                <label for="fullName">Full Name*
+                    <input type="text" name="fullName" id="fullName" placeholder="Harry Kaestner" pattern="[A-Za-z]{5}*" required>
+                </label>
             </div>
-        </article>
-        <article class="forecast">
-            <h3>5 Day Forecast</h3>
-            <table>
-                <tr>
-                    <th id="weekday1"></th>
-                    <th id="weekday2"></th>
-                    <th id="weekday3"></th>
-                    <th id="weekday4"></th>
-                    <th id="weekday5"></th>
-                </tr>
-                <tr>
-                    <td id="icon1"></td>
-                    <td id="icon2"></td>
-                    <td id="icon3"></td>
-                    <td id="icon4"></td>
-                    <td id="icon5"></td>
-                </tr>
-                <tr>
-                    <td><span id="day1"></span></td>
-                    <td><span id="day2"></span></td>
-                    <td><span id="day3"></span></td>
-                    <td><span id="day4"></span></td>
-                    <td><span id="day5"></span></td>
-                </tr>
-            </table>
-        </article>
-        <article class="blog">
-            <picture>
-                <source media="(max-width: 799px)" srcset="images/community377w.jpg">
-                <source media="(min-width: 800px)" srcset="images/community538w.jpg">
-                <img src="images/community538w.jpg" alt="a picture of community meeting">
-            </picture>
-            <h3>Soda Springs History</h3>
-            <p class="author" style="color: darkred">by Harry Kaestner</p>
-            <p>
-Soda Springs is a city in Caribou County, Idaho, United States. Its population was 3,058 at the 2010 census.
-The city has been the county seat of Caribou County[5] since the county was organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County. 
-The city is named for the hundreds of natural springs of carbonated water that are located in and around the city ...
-            </p>
-            <a href="https://en.wikipedia.org/wiki/Soda_Springs,_Idaho" target="_blank" style="color: darkred">continue to full article</a>
-        </article>
-
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <div class="event-list"></div>
-        </section>
-
-        <article class="contact-info">
-            <iframe class="map" id="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.9129900726!2d-111.62379142127332!3d42.66147063499639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1593746733189!5m2!1sen!2sus"
-                width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
-            </iframe>
-            <div class="wrapper-info">
-                <h3>Rexburg Chamber of Commerce</h3>
-                <div class="location">
-                    <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
-                    <p>Preston, ID 83263</p>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="adress@yourmail.com" minlength="3" maxlength="64" required>
+            </div>
+            <div class="input-box">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel"  name="phoneNumber" id="phoneNumber" placeholder="###-###-####" required>
+            </div>
+            <div class="input-box">
+                <label for="zipCode">Zip Code</label>
+                <input type="number" id="zipCode" placeholder="#####" required>
+            </div>
+            <div class="input-box">
+                <label for="stormDate">Storm Date</label>
+                <input type="date" name="stormDate" id="stormDate" value="2021-06-10" min="2021-01-01" max="2100-01-01">
+            </div>
+            <div class="input-box">
+                <label for="storm">Storm Type</label>
+                    <input type="text" list="storms" name="storm" id="storm">
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+            </div>
+            <div class="input-box">
+                    <label for="storming">Storm Severity
+                        <input type="range" name="storming" id="storming" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    </label>       
+                    <span id="ratingvalue">5</span>
+            </div>
+            <div class="input-box">
+                <label for="stormRegion">Storm Region</label>
+                <select name="stormRegion" id="stormRegion">
+                    <option selected="selected" disabled>Select Region ...</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>User In-Danger</legend>
+                <div class="radio">
+                    <input type="radio" id="yes" name="inDanger" value="yes" class="radio">
+                    <label for="yes">Yes</label>
                 </div>
-                <p><i class="fas fa-phone-alt"></i> 999.999.999</p>
-                <p><i class="fas fa-envelope"></i> rweathertoday@rwt.com</p>
-                <ul>
-                    <li><i class="fab fa-facebook"></i></li>
-                    <li><i class="fab fa-pinterest"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-whatsapp"></i></li>
-                </ul>
+                <div class="radio">
+                    <input type="radio" id="maybe" name="inDanger" value="maybe" class="radio">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="no" name="inDanger" value="no" class="radio">
+                    <label for="no">No</label>
+                </div>
+            </fieldset>
+            <div class="input-box">
+                <label for="addInfo">Additional Information</label>
+                <textarea name="addInfo" id="addInfo" cols="10" rows="10"></textarea>
             </div>
-        </article>
+            <input type="submit" value="Report Event" style="color: black" class="send">
+        </form>
     </main>
     <footer>
         <script src="js/lastvisit.js"></script>
-        <p><i class="far fa-copyright"></i> Rexburg Chamber of Commerce | Attributions | Harry Kaestner</p>
+        <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
         <p><span id="currentDate"></span></p>
         <a href="https://www.termsfeed.com/live/d63f51e9-53fd-4986-a632-83a26cef320d" target="_blank"><span id="terms" style="color: yellow">Terms of Use</span></a>
     </footer>
@@ -140,11 +126,7 @@ The city is named for the hundreds of natural springs of carbonated water that a
             }
         });
     </script>
-    <script src="js/apiSODS.js"></script>
-    <script src="js/forecastSODS.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/upcomingEvents.js"></script>
-    
 </body>
+
 </html>
