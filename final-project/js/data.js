@@ -1,8 +1,8 @@
 // data.js
 
-// weather stuff
+// weather API
 async function getWeather() {
-  const API_ID = 'ab6c445f38e58ef35ff191a805f3edc9';
+  const API_ID = '739476ad4754b9969a96d0127fc157a7';
   const LAT = '43.6488165';
   const LON = '-116.4058681';
   const EXCLUDE = 'minutely,hourly';

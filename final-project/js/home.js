@@ -5,7 +5,7 @@ const MAX_EVENTS = 5;
 const SPOTLIGHT_COMPANIES = 3;
 
 async function init() {
-  // weather stuff
+  // weather 
   const {
     temp,
     humidity,
@@ -56,7 +56,7 @@ async function init() {
       );
   }
 
-  // events stuff
+  // events list
   const events = await getEvents();
   events
     .map((e) => {
@@ -82,7 +82,7 @@ async function init() {
         .appendChild(createEventItem(e));
     });
 
-  // companies stuff
+  // companies list
   const companies = await getCompanies();
   companies
     .sort(() => Math.random() - 0.5) // really bad shuffle

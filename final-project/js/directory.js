@@ -1,7 +1,7 @@
 // directory.js
 
 async function init() {
-  // companies stuff
+  // Companies List
   const companies = await getCompanies();
   companies.forEach((c) => {
     document.querySelector('.directory > ul').appendChild(createCompanyCard(c));
