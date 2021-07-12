@@ -2,7 +2,7 @@
   "data": [
     {
       "name": "Rocky Mountain Power",
-      "logo": "Rocky-Logo.jpg",
+      "logo": "rocky-logo.png",
       "address": "170 W 2nd N, Rexburg, ID 83440",
       "phone": "1-888-221-7070",
       "url": "https://www.rockymountainpower.net/"
@@ -16,7 +16,7 @@
     },
     {
       "name": "Broulims",
-      "logo": "broulims-Logo.png",
+      "logo": "broulims-logo.png",
       "address": "124 W Main St, Rexburg, ID 83440",
       "phone": "(208) 356-4651",
       "url": "https://broulims.com/"
