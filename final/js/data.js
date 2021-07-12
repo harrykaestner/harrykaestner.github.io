@@ -1,0 +1,54 @@
+// data.js
+
+// weather stuff
+async function getWeather() {
+  const API_ID = 'ab6c445f38e58ef35ff191a805f3edc9';
+  const LAT = '43.6488165';
+  const LON = '-116.4058681';
+  const EXCLUDE = 'minutely,hourly';
+
+  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=${EXCLUDE}&appid=${API_ID}&units=imperial`;
+  const response = await fetch(url);
+  const data = await response.json();
+
+  const { temp, humidity, description, icon, date } = extractWeatherData(
+    data.current
+  );
+  const forecast = data.daily.slice(1).map(extractWeatherData);
+  const alerts = data.alerts.map((x) => x.event);
+
+  return { temp, humidity, description, icon, date, forecast, alerts };
+}
+
+function extractWeatherData(data) {
+  const {
+    temp,
+    humidity,
+    weather: [{ description, icon }],
+    dt,
+  } = data;
+
+  return {
+    temp: typeof temp === 'number' ? temp : temp.day,
+    date: new Date(dt * 1000),
+    humidity,
+    description,
+    icon,
+  };
+}
+
+// events stuff
+async function getEvents() {
+  const url = `./data/events.json`;
+  const response = await fetch(url);
+  const { data } = await response.json();
+  return data;
+}
+
+// companies stuff
+async function getCompanies() {
+  const url = `./data/companies.json`;
+  const response = await fetch(url);
+  const { data } = await response.json();
+  return data;
+}
