@@ -1,74 +1,25 @@
 {
   "data": [
     {
-      "name": "Idaho Websites",
-      "logo": "logo-idweb.svg",
-      "address": "2115 S Vista Avenue Boise ID 83705",
-      "phone": "(208) 342-9386",
-      "url": "https://idahowebsites.com/"
+      "name": "Rocky Mountain Power",
+      "logo": "RockyMountainPower.jpg",
+      "address": "170 W 2nd N, Rexburg, ID 83440",
+      "phone": "1-888-221-7070",
+      "url": "https://www.rockymountainpower.net/"
     },
     {
-      "name": "Surge Web Design",
-      "logo": "logo-surge.png",
-      "address": "4072 E Arch Drive Meridian ID 83646",
-      "phone": "(208) 631-0640",
-      "url": "https://www.surgewebdesign.com/"
+      "name": "Albertsons",
+      "logo": "albertsons.jpg",
+      "address": "490 N 2nd E, Rexburg, ID 83440",
+      "phone": "(208) 356-0555",
+      "url": "https://www.albertsons.com/"
     },
     {
-      "name": "Graphic Zen",
-      "logo": "logo-zen.svg",
-      "address": "1788 E Summerplace Court Meridian ID 83646",
-      "phone": "(208) 631-4984",
-      "url": "https://graphiczen.com/"
+      "name": "Broulims",
+      "logo": "broulims.jpg",
+      "address": "124 W Main St, Rexburg, ID 83440",
+      "phone": "(208) 356-4651",
+      "url": "https://broulims.com/"
     },
     {
-      "name": "Peppershock Media",
-      "logo": "logo-peppershock.png",
-      "address": "1215 3rd Street Nampa ID 83651",
-      "phone": "(208) 461-5070",
-      "url": "https://www.peppershock.com/"
-    },
-    {
-      "name": "Flash Tech Services",
-      "logo": "logo-flash.png",
-      "address": "Star Idaho 83669",
-      "phone": "(208) 488-5810",
-      "url": "https://flashtechnicalservices.com/"
-    },
-    {
-      "name": "Metro Express Car Wash, LLC",
-      "logo": "logo-metro.png",
-      "address": "1725 E Overland Road Meridian ID 83642",
-      "phone": "(208) 888-4073",
-      "url": "https://www.metroexpresscarwash.com/"
-    },
-    {
-      "name": "Ultra Touch Car Wash",
-      "logo": "logo-ultra.png",
-      "address": "835 E. Fairview Ave Meridian ID 83642",
-      "phone": "(208) 884-8100",
-      "url": "http://www.ultratouchcarwash.com/"
-    },
-    {
-      "name": "Reed's Diary",
-      "logo": "logo-reeds.png",
-      "address": "1735 W Chinden Blvd #130, Meridian, ID 83646",
-      "phone": "(208) 846-7220",
-      "url": "https://reedsdairy.com/"
-    },
-    {
-      "name": "Roaring Springs",
-      "logo": "logo-roaring.png",
-      "address": "400 West Overland Road Meridian, ID 83642",
-      "phone": "(208) 884-8842",
-      "url": "https://www.roaringsprings.com/"
-    }
-  ]
-}
-
-
-
-
-
-
-
+      
