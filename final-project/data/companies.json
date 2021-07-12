@@ -2,21 +2,21 @@
   "data": [
     {
       "name": "Rocky Mountain Power",
-      "logo": "RockyMountainPower.jpg",
+      "logo": "Rocky-Logo.jpg",
       "address": "170 W 2nd N, Rexburg, ID 83440",
       "phone": "1-888-221-7070",
       "url": "https://www.rockymountainpower.net/"
     },
     {
       "name": "Albertsons",
-      "logo": "albertsons.jpg",
+      "logo": "albertsons-logo.jpg",
       "address": "490 N 2nd E, Rexburg, ID 83440",
       "phone": "(208) 356-0555",
       "url": "https://www.albertsons.com/"
     },
     {
       "name": "Broulims",
-      "logo": "broulims.jpg",
+      "logo": "broulims-Logo.png",
       "address": "124 W Main St, Rexburg, ID 83440",
       "phone": "(208) 356-4651",
       "url": "https://broulims.com/"
