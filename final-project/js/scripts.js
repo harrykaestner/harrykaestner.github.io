@@ -19,7 +19,6 @@ document.getElementById("currentDate").innerHTML = day + ", " + dateNum + " " + 
 // Code for responsive navigation
 const hamButton = document.querySelector('#hamBtn');
 const navigation = document.querySelector('.navigation');
-hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);
 
 // If the actual day is Friday displays the banner
 if (day == "Friday"){

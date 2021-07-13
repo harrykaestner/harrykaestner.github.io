@@ -14,7 +14,7 @@ async function init() {
     date,
     forecast,
     alerts,
-  } = await getWeather();
+  } 
 
   // load current data
   document.querySelector('.current-weather').appendChild(
