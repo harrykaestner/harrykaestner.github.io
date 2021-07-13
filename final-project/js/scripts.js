@@ -16,11 +16,6 @@ for (let i = 0; i < days.length - 1; i++) {
 }
 document.getElementById("currentDate").innerHTML = day + ", " + dateNum + " " + months[month] + " " + year + ".";
 
-// Code for responsive navigation
-const hamButton = document.querySelector('#hamBtn');
-const navigation = document.querySelector('.navigation');
-hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);
-
 // If the actual day is Friday displays the banner
 if (day == "Friday"){
     let aside = document.getElementById("aside");
