@@ -1,0 +1,20 @@
+{
+  "data":[
+    {"date": "2021-04-05", "event": "Porter Park Day"},
+    {"date": "2021-03-20", "event": "Smith Park Academy Day"},
+    {"date": "2021-02-23", "event": "Join us at the Book Wagon!"},
+    {"date": "2021-06-11", "event": "Madison Library Day"},
+    {"date": "2021-08-28", "event": "Art Grows and Find Out"},
+    {"date": "2021-06-12", "event": "Teen Crafts Day"},
+    {"date": "2021-06-24", "event": "BYUI Racing Day"},
+    {"date": "2021-07-04", "event": "Food Bank Volunteers"},
+    {"date": "2021-08-10", "event": "Heritage Program"},
+    {"date": "2021-09-15", "event": "Family History in the Family Search Building"},
+    {"date": "2021-08-01", "event": "East Idaho Renaissance Faire"},
+    {"date": "2021-09-08", "event": "Art Grows Adult Art Competition and Exhibit"},
+    {"date": "2021-09-21", "event": "Madison Library presents: Rocky Mountain Puppets!"},
+    {"date": "2021-10-21", "event": "Art Competition & Exhibit"},
+    {"date": "2021-12-15", "event": "Christmas with Santa Claus"},
+    {"date": "2021-01-10", "event": "Directory – Shopping & Specialty Retail"}
+  ]
+}
