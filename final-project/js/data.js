@@ -3,11 +3,11 @@
 // weather stuff
 async function getWeather() {
   const API_ID = '739476ad4754b9969a96d0127fc157a7';
-  const LAT = '43.8260227';
-  const LON = '-111.7896876';
+  const LAT = '43.826';
+  const LON = '-111.7897';
   const EXCLUDE = 'minutely,hourly';
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=Rexburg,us&APPID=739476ad4754b9969a96d0127fc157a7`;
+  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=${EXCLUDE}&appid=${API_ID}&units=imperial`;
   const response = await fetch(url);
   const data = await response.json();
 
