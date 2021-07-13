@@ -7,7 +7,7 @@ async function getWeather() {
   const LON = '-111.7897';
   const EXCLUDE = 'minutely,hourly';
 
-  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=${EXCLUDE}&appid=${API_ID}&units=imperial`;
+  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=43.826&lon=-111.7897&exclude=minutely,hourly&appid=739476ad4754b9969a96d0127fc157a7&units=imperial`;
   const response = await fetch(url);
   const data = await response.json();
 
