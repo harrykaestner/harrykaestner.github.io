@@ -45,7 +45,7 @@ async function init() {
   if (alerts.length > 0) {
     document.querySelector('.alert > .msg').innerHTML = `
       &#9888;&#65039; &#9888;&#65039; &#9888;&#65039;
-      WEATHER ALERT: ${alerts.join(', ')}
+      ATTENTION: ${alerts.join(', ')}
       &#9888;&#65039; &#9888;&#65039; &#9888;&#65039;
     `;
     document.querySelector('.alert').classList.remove('hidden');
