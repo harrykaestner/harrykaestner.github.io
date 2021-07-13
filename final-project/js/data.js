@@ -1,10 +1,10 @@
 // data.js
 
-// weather stuff
+// weather Rexburg
 async function getWeather() {
-  const API_ID = 'ab6c445f38e58ef35ff191a805f3edc9';
-  const LAT = '43.6488165';
-  const LON = '-116.4058681';
+  const API_ID = '739476ad4754b9969a96d0127fc157a7';
+  const LAT = '43.826';
+  const LON = '-111.7897';
   const EXCLUDE = 'minutely,hourly';
 
   const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=${EXCLUDE}&appid=${API_ID}&units=imperial`;
@@ -37,7 +37,7 @@ function extractWeatherData(data) {
   };
 }
 
-// events stuff
+// events list
 async function getEvents() {
   const url = `./data/events.json`;
   const response = await fetch(url);
@@ -45,7 +45,7 @@ async function getEvents() {
   return data;
 }
 
-// companies stuff
+// companies list
 async function getCompanies() {
   const url = `./data/companies.json`;
   const response = await fetch(url);
