@@ -5,7 +5,7 @@ const MAX_EVENTS = 5;
 const SPOTLIGHT_COMPANIES = 3;
 
 async function init() {
-  // weather 
+  // weather stuff
   const {
     temp,
     humidity,
@@ -14,7 +14,7 @@ async function init() {
     date,
     forecast,
     alerts,
-  } 
+  } = await getWeather();
 
   // load current data
   document.querySelector('.current-weather').appendChild(
@@ -45,7 +45,7 @@ async function init() {
   if (alerts.length > 0) {
     document.querySelector('.alert > .msg').innerHTML = `
       &#9888;&#65039; &#9888;&#65039; &#9888;&#65039;
-      ATTENTION: ${alerts.join(', ')}
+      WEATHER ALERT: ${alerts.join(', ')}
       &#9888;&#65039; &#9888;&#65039; &#9888;&#65039;
     `;
     document.querySelector('.alert').classList.remove('hidden');
@@ -56,7 +56,7 @@ async function init() {
       );
   }
 
-  // events list
+  // events stuff
   const events = await getEvents();
   events
     .map((e) => {
@@ -82,7 +82,7 @@ async function init() {
         .appendChild(createEventItem(e));
     });
 
-  // companies list
+  // companies stuff
   const companies = await getCompanies();
   companies
     .sort(() => Math.random() - 0.5) // really bad shuffle

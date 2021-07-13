@@ -1,7 +1,8 @@
 function init() {
   // dynamically set dates on page
   document.querySelector(
-    '.copyright-year',)
+    '.copyright-year'
+  ).innerHTML = new Date().getFullYear();
   document.querySelector('.updated').innerHTML = new Intl.DateTimeFormat(
     'en-US',
     {
