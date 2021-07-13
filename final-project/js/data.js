@@ -37,7 +37,7 @@ function extractWeatherData(data) {
   };
 }
 
-// events stuff
+// events list
 async function getEvents() {
   const url = `./data/events.json`;
   const response = await fetch(url);
@@ -45,7 +45,7 @@ async function getEvents() {
   return data;
 }
 
-// companies stuff
+// companies list
 async function getCompanies() {
   const url = `./data/companies.json`;
   const response = await fetch(url);
