@@ -21,7 +21,7 @@ const hamButton = document.querySelector('#hamBtn');
 const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);
 if(hamButton.addEventListener("status") != null){
-   hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);
+   hamButton.addEventListener;
 }
 
 // If the actual day is Friday displays the banner
