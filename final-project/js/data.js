@@ -2,10 +2,10 @@
 
 // weather stuff
 async function getWeather() {
-  const API_ID = '739476ad4754b9969a96d0127fc157a7';
+  const API_ID = 'ab6c445f38e58ef35ff191a805f3edc9';
   const LAT = '43.8260227';
   const LON = '-111.7896876';
-  const EXCLUDE = 'part';
+  const EXCLUDE = 'minutely,hourly';
 
   const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=${EXCLUDE}&appid=${API_ID}&units=imperial`;
   const response = await fetch(url);
