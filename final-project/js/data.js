@@ -39,7 +39,7 @@ function extractWeatherData(data) {
 
 // events stuff
 async function getEvents() {
-  const url = `./data/events.json`;
+  const url = `final-project/data/events.json`;
   const response = await fetch(url);
   const { data } = await response.json();
   return data;
@@ -47,7 +47,7 @@ async function getEvents() {
 
 // companies stuff
 async function getCompanies() {
-  const url = `./data/companies.json`;
+  const url = `final-project/data/companies.json`;
   const response = await fetch(url);
   const { data } = await response.json();
   return data;
