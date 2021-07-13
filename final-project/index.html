@@ -1,174 +1,138 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <title>Rexburg Chamber of Commerce - Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Rexburg Chamber of Commerce. The America’s Family Community"
-    />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&display=swap"
-    />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/small.css" media="(max-width: 48.475em)" />
-    <link
-      rel="stylesheet"
-      href="css/medium.css"
-      media="(min-width: 48.5em) and (max-width: 75.9375em)"
-    />
-    <link rel="stylesheet" href="css/large.css" media="(min-width: 76em)" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather Today | Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="author" content="Harry Kaestner">
+    <meta name="description" content="WDD 230 - Rexburg Chamber of Commerce - Home">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 799px)" srcset="images/RexburgLogo02.png">
+            <source media="(min-width: 800px)" srcset="images/RexburgLogo02.png">
+            <img src="images/RexburgLogo02.png" alt="Rexburg logo">
+        </picture>
+        <div class="title">
+            <h1>Rexburg Chamber of Commerce</h1>
+            <h3>The America’s Family Community</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html" class="active">Rexburg</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="page-title">Rexburg Idaho</h2>
+        <article class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/rexburg-idaho-temple.jpg">
+                <source media="(max-width: 600px)" srcset="images/rexburg-idaho-temple.jpg">
+                <source media="(max-width: 800px)" srcset="images/rexburg-idaho-temple.jpg">
+                <img src="images/rexburg-idaho-temple.jpg" alt="hero image">
+            </picture>
+            <div class="hero-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="curr"></span></p>
+                <p>High: <span id="tempH"></span> °F</p>
+                <p>Wind Chill: <span id="wChill"></span>°F</p>
+                <p>Humidity: <span id="hum"></span>%</p>
+                <p>Wind Speed: <span id="wSpeed"></span> mph</p>
+            </div>
+        </article>
+        <article class="forecast">
+            <h3>3 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th id="weekday1"></th>
+                    <th id="weekday2"></th>
+                    <th id="weekday3"></th>
+                </tr>
+                <tr>
+                    <td id="icon1"></td>
+                    <td id="icon2"></td>
+                    <td id="icon3"></td>
+                </tr>
+                <tr>
+                    <td><span id="day1"></span></td>
+                    <td><span id="day2"></span></td>
+                    <td><span id="day3"></span></td>
+                </tr>
+            </table>
+        </article>
+        <article class="blog">
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/iguazu230w.jpg">
+                <source media="(min-width: 800px)" srcset="images/iguazu280w.jpg">
+                <img src="images/iguazu280w.jpg" alt="a picture of Cataratas do Iguaçu">
+            </picture>
+            <h3>Iguazu Falls</h3>
+            <p class="author" style="color: darkred">by Harry Kaestner</p>
+            <p>
+                Iguazú Falls or Iguaçu Falls (Spanish: Cataratas del Iguazú [kataˈɾatas ðel iɣwaˈsu]; Guarani: Chororõ Yguasu [ɕoɾo'ɾõ ɨɣʷa'su]; Portuguese: Cataratas do Iguaçu [kataˈɾatɐs du iɡwaˈsu]) are waterfalls of the Iguazu River on the border of the Argentine province of Misiones and the Brazilian unit of Paraná. Together, they make up the largest waterfall in the world. The falls divide the river into the upper and lower Iguazu. The Iguazu River rises near the heart of the city of Curitiba. For most of its course, the river flows through Brazil; however, most of the falls are on the Argentine side. Below its confluence with the San Antonio River, the Iguazu River forms the border between Argentina and Brazil ...
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Iguazu_Falls" target="_blank" style="color: darkred">continue to full article</a>
+        </article>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-list"></div>
+        </section>
+
+        <article class="contact-info">
+            <iframe class="map" id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28163.73619399447!2d-111.9033210029279!3d42.10001505535372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590175225846!5m2!1sen!2sus"
+                width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+            <div class="wrapper-info">
+                <h3>Real Weather Today</h3>
+                <div class="location">
+                    <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+                    <p>Preston, ID 83263</p>
+                </div>
+                <p><i class="fas fa-phone-alt"></i> 999.999.999</p>
+                <p><i class="fas fa-envelope"></i> rweathertoday@rwt.com</p>
+                <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-pinterest"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <script src="js/lastvisit.js"></script>
+        <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
+        <p><span id="currentDate"></span></p>
+        <a href="https://www.termsfeed.com/live/d63f51e9-53fd-4986-a632-83a26cef320d" target="_blank"><span id="terms" style="color: yellow">Terms of Use</span></a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Montserrat:300,400,700']
+            }
+        });
+    </script>
     <script src="js/apiREX.js"></script>
     <script src="js/forecastREX.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/upcomingEvents.js"></script>
-  </head>
-  <body>
-    <div class="alert hidden">
-      <span class="msg"></span>
-      <button>[close]</button>
-    </div>
-    <header>
-      <div class="wrap">
-        <div class="brand">
-          <img
-            class="logo"
-            alt=""
-            src="images/RexburgLogo02.png"
-            width="409"
-            height="90"
-          />
-          <div class="motto">The America’s Family Community</div>
-        </div>
-      </div>
-    </header>
-    <nav>
-      <ul class="wrap">
-        <li>
-          <a class="menu-toggle" href="#"> &#9776; Menu </a>
-        </li>
-        <li class="active"><a href="./">Home</a></li>
-        <li><a href="city.html">Rexburg</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <main class="home">
-      <section class="hero">
-        <h1>Rexburg, Idaho: The America’s Family Community</h1>
-      </section>
-      <aside class="details">
-        <div class="current-weather card">
-          <h3>Current Weather</h3>
-          <!-- dynamic -->
-        </div>
-        <div class="forecast card">
-          <h3>3-Day Forecast</h3>
-          <ul>
-            <!-- dynamic -->
-          </ul>
-        </div>
-        <div class="upcoming-events card">
-          <h3>Upcoming Events</h3>
-          <ul>
-            <!-- dynamic -->
-          </ul>
-        </div>
-      </aside>
-      <div class="content">
-        <section class="article">
-          <h2>Advocating, Educating and Promoting Local Businesses success</h2>
-          <p>
-            The Rexburg Area Chamber of Commerce is here to promote your business, educate you on business topics, and to be your advocate. 
-          </p>
-          <h2>
-            Ready to take your business to the next level? Join the Chamber to connect to the Rexburg community and local business owners and professionals
-          </h2>
-          <p>
-            By centering your business on the community, you access a whole network that will help your company to grow and prosper. Rexburg is a quickly growing community with much potential. Join the Rexburg Area Chamber of Commerce today to be a part of this historic growth and prosperity.
-          </p>
-          <p>
-            When your business in connected with the community, more business opportunities arise. People want to do business with people, not random businesses they find on the internet. By joining the Chamber, you have access to an amazing network of local business owners and professionals that want to do business with other local people. This is your chance to really change your future. All you have to do is join the Chamber and start networking.
-          </p>
-          <p>
-            The Chamber wants to help you become successful through community networking and promotions. Your company is reliant on the local market, which the Rexburg Area Chamber of Commerce specializes in. Connect to the community by becoming a member of the Chamber, today!
-          </p>
-          <a class="join-btn" href="join.html">Become a Chamber Member Now!</a>
-        </section>
-        <aside class="featured card">
-          <h3>Featured Companies</h3>
-          <ul>
-            <!-- dynamic -->
-          </ul>
-        </aside>
-      </div>
-      <section class="contact">
-        <div class="map"></div>
-        <div class="information">
-          <h2>Rexburg Chamber of Commerce</h2>
-          <p>
-            215 N Main Street<br />
-            Rexburg, Idaho 83440
-          </p>
-          <p>
-            208-555-5767<br />
-            contact@rexburgchamber.net
-          </p>
-          <p>
-            <a href="http://www.facebook.com">
-              <img
-                alt="facebook logo"
-                src="images/facebook.png"
-                height="64"
-                width="64"
-            /></a>
-            <a href="http://www.twitter.com">
-              <img
-                alt="twitter logo"
-                src="images/twitter.png"
-                height="64"
-                width="64"
-            /></a>
-            <a href="http://www.youtube.com">
-              <img
-                alt="youtube logo"
-                src="images/youtube.png"
-                height="64"
-                width="64"
-            /></a>
-          </p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <script src="js/lastvisit.js"></script>
-      <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
-      <p><span id="currentDate"></span></p>
-      <a href="https://www.termsfeed.com/live/d63f51e9-53fd-4986-a632-83a26cef320d" target="_blank"><span id="terms" style="color: darkred">Terms of Use</span></a>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ['Montserrat:300,400,700']
-        }
-      });
-    </script>
-    
-  </body>
-  
+</body>
 </html>
