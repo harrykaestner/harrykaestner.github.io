@@ -1,6 +1,6 @@
 // data.js
 
-// weather stuff
+// weather Rexburg
 async function getWeather() {
   const API_ID = '739476ad4754b9969a96d0127fc157a7';
   const LAT = '43.826';
@@ -37,17 +37,17 @@ function extractWeatherData(data) {
   };
 }
 
-// events stuff
+// events list
 async function getEvents() {
-  const url = `final-project/data/events.json`;
+  const url = `data/events.json`;
   const response = await fetch(url);
   const { data } = await response.json();
   return data;
 }
 
-// companies stuff
+// companies list
 async function getCompanies() {
-  const url = `final-project/data/companies.json`;
+  const url = `data/companies.json`;
   const response = await fetch(url);
   const { data } = await response.json();
   return data;
