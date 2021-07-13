@@ -217,7 +217,7 @@ main > .contact {
 }
 
 main > .contact .map {
-  background-image: url('images/rexchambermap.png');
+  background-image: url('../images/rexchambermap.png');
   flex-grow: 1;
   width: 100%;
   height: 20em;
