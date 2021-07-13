@@ -5,7 +5,8 @@ const MAX_EVENTS = 5;
 const SPOTLIGHT_COMPANIES = 3;
 
 async function init() {
-  // weather stuff
+  
+  // weather Rexburg
   const {
     temp,
     humidity,
@@ -13,7 +14,6 @@ async function init() {
     icon,
     date,
     forecast,
-    alerts,
   } = await getWeather();
 
   // load current data
@@ -41,22 +41,7 @@ async function init() {
     );
   });
 
-  // display alerts if any
-  if (alerts.length > 0) {
-    document.querySelector('.alert > .msg').innerHTML = `
-      &#9888;&#65039; &#9888;&#65039; &#9888;&#65039;
-      WEATHER ALERT: ${alerts.join(', ')}
-      &#9888;&#65039; &#9888;&#65039; &#9888;&#65039;
-    `;
-    document.querySelector('.alert').classList.remove('hidden');
-    document
-      .querySelector('.alert > button')
-      .addEventListener('click', (evt) =>
-        evt.target.parentNode.classList.add('hidden')
-      );
-  }
-
-  // events stuff
+  // events list
   const events = await getEvents();
   events
     .map((e) => {
@@ -82,7 +67,7 @@ async function init() {
         .appendChild(createEventItem(e));
     });
 
-  // companies stuff
+  // companies list
   const companies = await getCompanies();
   companies
     .sort(() => Math.random() - 0.5) // really bad shuffle

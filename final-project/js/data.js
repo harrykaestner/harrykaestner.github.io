@@ -15,9 +15,8 @@ async function getWeather() {
     data.current
   );
   const forecast = data.daily.slice(1).map(extractWeatherData);
-  const alerts = data.alerts.map((x) => x.event);
-
-  return { temp, humidity, description, icon, date, forecast, alerts };
+  
+  return { temp, humidity, description, icon, date, forecast};
 }
 
 function extractWeatherData(data) {
