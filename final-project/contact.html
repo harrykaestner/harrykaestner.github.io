@@ -30,6 +30,10 @@
     />
     <link rel="stylesheet" href="css/large.css" media="(min-width: 76em)" />
     <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/factory.js"></script>
+    <script src="js/city.js"></script>
   </head>
   <body>
     <header>
@@ -38,9 +42,9 @@
           <img
             class="logo"
             alt=""
-            src="images/logo.svg"
-            width="409"
-            height="90"
+            src="images/RexburgLogo02.png"
+            width="450"
+            height="180"
           />
           <div class="motto">The America’s Family Community</div>
         </div>
@@ -52,14 +56,78 @@
           <a class="menu-toggle" href="#"> &#9776; Menu </a>
         </li>
         <li><a href="./">Home</a></li>
-        <li><a href="city.html">Rexburg</a></li>
+        <li><a href="city.html">Meridian</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li class="active"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
-      <!-- fill in da junt -->
+    <main class="city">
+      <aside class="details">
+        <div class="upcoming-events card">
+          <h3>Upcoming Events to register</h3>
+          <ul>
+            <!-- dynamic -->
+          </ul>
+        </div>
+      </aside>
+      <div class="content">
+        <section class="article">
+          <h1>General Contact Info</h1>
+          <p>
+            The Chamber of Commerce is open Monday – Thursday 8 am to 6 pm and Friday from 8 am to 2 pm. If you have any questions about business, the community or the local area, we would love to hear from you!
+          </p>
+          <img
+            src="images/placeholder.png"
+            data-src="images/community.jpg"
+            alt="Rexburg"
+            width="590"
+            height="393"
+          />
+          <h2>CONTACT</h2>
+          <p>
+            Chamber Info
+            200  N. Main St. Ste. 15
+            Rexburg, ID 83440
+            Phone: 208-555-5767
+            FAX: 208-555-5799
+
+            Check a list of the board of directors by CLICKING BELOW! 
+          </p>
+          <a href="https://drive.google.com/file/d/1REFWyugtACTKKuNTiG8jLdqvIiMqDR-j/view?usp=sharing" target="_blank" style="color: darkred"> BOARD OF DIRECTORS LIST HERE.</a> 
+          <p>Any other requests fell free to reach us through our email contact@rexburgchamber.net or through our form below!</p>
+          <img
+            src="images/placeholder.png"
+            data-src="images/meeting.jpg"
+            alt="Rexburg"
+            width="590"
+            height="376"
+          />
+          
+          <article class="contact-info">
+            <iframe class="map" id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28163.73619399447!2d-111.9033210029279!3d42.10001505535372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590175225846!5m2!1sen!2sus"
+                width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+            <div class="wrapper-info">
+                <h3>Rexburg Chamber of Commerce</h3>
+                <div class="location">
+                    <p><i class="fas fa-map-marker-alt"></i> 215 N Main Street </p>
+                    <p>Rexburg, ID 83440</p>
+                </div>
+                <p><i class="fas fa-phone-alt"></i> 208-555-5767</p>
+                <p><i class="fas fa-envelope"></i>  rexburginnchamber.org</p>
+                <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-pinterest"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
     </main>
     <footer>
         <script src="js/lastvisit.js"></script>
