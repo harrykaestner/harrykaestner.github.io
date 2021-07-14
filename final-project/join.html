@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Rexburg Chamber of Commerce - Home</title>
+    <title>Rexburg Chamber of Commerce - City</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -30,6 +30,10 @@
     />
     <link rel="stylesheet" href="css/large.css" media="(min-width: 76em)" />
     <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/factory.js"></script>
+    <script src="js/city.js"></script>
   </head>
   <body>
     <header>
@@ -39,8 +43,8 @@
             class="logo"
             alt=""
             src="images/RexburgLogo02.png"
-            width="409"
-            height="90"
+            width="450"
+            height="180"
           />
           <div class="motto">The America’s Family Community</div>
         </div>
@@ -58,36 +62,55 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
-      <article class="blog">
-        <picture>
-            <source media="(max-width: 799px)" srcset="images/community.jpg.jpg">
-            <source media="(min-width: 800px)" srcset="images/community.jpg.jpg">
-            <img src="images/community.jpg" alt="Rexburg Chamber">
-        </picture>
-        <h3>Membership Application</h3>
-        <p class="author" style="color: darkred">by Harry Kaestner</p>
-        <p>
+    <main class="city">
+      <aside class="details">
+        <div class="upcoming-events card">
+          <h3>Become a Member</h3>
+          <ul>
+            <!-- dynamic -->
+          </ul>
+        </div>
+      </aside>
+      <div class="content">
+        <section class="article">
+          <h1>Membership Application</h1>
+          <p>
           If you would like more information about Chamber investment levels, please visit our Investment Levels & Membership Benefits page.
-        </p>
-        <p>If you would like to speak to a new member representative about joining the Chamber, please call 208-356-5700. You can download the application by </p>
-        <a href="https://en.wikipedia.org/wiki/Iguazu_Falls" target="_blank" style="color: darkred">CLICKING HERE.</a>
-    </article>
+          </p>
+          <img
+            src="images/placeholder.png"
+            data-src="images/rexburg-idaho-temple2.jpg"
+            alt="Rexburg"
+            width="590"
+            height="393"
+          />
+          <h2>History</h2>
+          <p>
+          If you would like to speak to a new member representative about joining the Chamber, please call 208-356-5700. You can download the application by CLICKING HERE.
+          </p>
+          <img
+            src="images/placeholder.png"
+            data-src="images/rexburgday.jpg"
+            alt="Rexburg"
+            width="590"
+            height="376"
+          />
+          
     </main>
     <footer>
         <script src="js/lastvisit.js"></script>
         <p><i class="far fa-copyright"></i> Rexburg Chamber of Commerce | Attributions | Harry Kaestner</p>
         <p><span id="currentDate"></span></p>
         <a href="https://www.termsfeed.com/live/d61fb2f6-cfa7-490f-8af5-c62af4122a24" target="_blank"><span id="terms" style="color: darkred">Terms of Use</span></a>
-      </footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-      <script>
-        WebFont.load({
-          google: {
-            families: ['Montserrat:300,400,700']
-          }
-        });
-      </script>
-      <script src="js/scripts.js"></script>
-    </body>
-  </html>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Montserrat:300,400,700']
+        }
+      });
+    </script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
