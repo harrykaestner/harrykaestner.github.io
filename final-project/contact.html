@@ -1,132 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rexburg Chamber of Commerce | Contact</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="author" content="Harry Kaestner">
-    <meta name="description" content="WDD 230 - Stormcenter assignment">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-</head>
-
-<body>
-    <aside id="aside" style="color: darkred">
-        <p>Saturday = Preston Pancakes and Hot Dogs in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </aside>
+<html lang="en-us">
+  <head>
+    <title>Rexburg Chamber of Commerce - Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Rexburg Chamber of Commerce. The America’s Family Community."
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Fuggles&family=Inter&family=Josefin+Sans&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css2?family=Fuggles&family=Inter&family=Josefin+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/small.css" media="(max-width: 48.475em)" />
+    <link
+      rel="stylesheet"
+      href="css/medium.css"
+      media="(min-width: 48.5em) and (max-width: 75.9375em)"
+    />
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 76em)" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
     <header>
-        <picture>
-            <source media="(max-width: 799px)" srcset="images/logo96w.png">
-            <source media="(min-width: 800px)" srcset="images/logo128w.png">
-            <img src="images/logo128w.png" alt="Real Weather Today logo">
-        </picture>
-        <div class="title">
-            <h1>Rexburg Chamber of Commerce</h1>
-            <h3>America’s Family Community</h3>
+      <div class="wrap">
+        <div class="brand">
+          <img
+            class="logo"
+            alt=""
+            src="images/logo.svg"
+            width="409"
+            height="90"
+          />
+          <div class="motto">The America’s Family Community</div>
         </div>
+      </div>
     </header>
     <nav>
-        <ul class="navigation">
-            <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
-            <li><a href="index.html" target="_blank" class="active">Home</a></li>
-            <li><a href="city.html" target="_blank">Rexburg</a></li>
-            <li><a href="join.html"target="_blank">Join</a></li>
-            <li><a href="directory.html"target="_blank">Directory</a></li>
-            <li><a href="contact.html"target="_blank">Contact</a></li>
-        </ul>
+      <ul class="wrap">
+        <li>
+          <a class="menu-toggle" href="#"> &#9776; Menu </a>
+        </li>
+        <li><a href="./">Home</a></li>
+        <li><a href="city.html">Rexburg</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
     <main>
-        <h2>Storm Center</h2>
-        <form action="thanks.html">
-            <div class="input-box">
-                <label for="fullName">Full Name*
-                    <input type="text" name="fullName" id="fullName" placeholder="Harry Kaestner" pattern="[A-Za-z]{5}*" required>
-                </label>
-            </div>
-            <div class="input-box">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="adress@yourmail.com" minlength="3" maxlength="64" required>
-            </div>
-            <div class="input-box">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="tel"  name="phoneNumber" id="phoneNumber" placeholder="###-###-####" required>
-            </div>
-            <div class="input-box">
-                <label for="zipCode">Zip Code</label>
-                <input type="number" id="zipCode" placeholder="#####" required>
-            </div>
-            <div class="input-box">
-                <label for="stormDate">Storm Date</label>
-                <input type="date" name="stormDate" id="stormDate" value="2021-06-10" min="2021-01-01" max="2100-01-01">
-            </div>
-            <div class="input-box">
-                <label for="storm">Storm Type</label>
-                    <input type="text" list="storms" name="storm" id="storm">
-                    <datalist id="storms">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunder Storm">
-                        <option value="Tornado">
-                    </datalist>
-            </div>
-            <div class="input-box">
-                    <label for="storming">Storm Severity
-                        <input type="range" name="storming" id="storming" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    </label>       
-                    <span id="ratingvalue">5</span>
-            </div>
-            <div class="input-box">
-                <label for="stormRegion">Storm Region</label>
-                <select name="stormRegion" id="stormRegion">
-                    <option selected="selected" disabled>Select Region ...</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda-springs">Soda Springs</option>
-                    <option value="fish-haven">Fish Haven</option>
-                </select>
-            </div>
-            <fieldset>
-                <legend>User In-Danger</legend>
-                <div class="radio">
-                    <input type="radio" id="yes" name="inDanger" value="yes" class="radio">
-                    <label for="yes">Yes</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" id="maybe" name="inDanger" value="maybe" class="radio">
-                    <label for="maybe">Maybe</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" id="no" name="inDanger" value="no" class="radio">
-                    <label for="no">No</label>
-                </div>
-            </fieldset>
-            <div class="input-box">
-                <label for="addInfo">Additional Information</label>
-                <textarea name="addInfo" id="addInfo" cols="10" rows="10"></textarea>
-            </div>
-            <input type="submit" value="Report Event" style="color: black" class="send">
-        </form>
+      <!-- fill in da junt -->
     </main>
     <footer>
         <script src="js/lastvisit.js"></script>
-        <p><i class="far fa-copyright"></i> Real Weather Today | Attributions | Harry Kaestner</p>
+        <p><i class="far fa-copyright"></i> Rexburg Chamber of Commerce | Attributions | Harry Kaestner</p>
         <p><span id="currentDate"></span></p>
-        <a href="https://www.termsfeed.com/live/d63f51e9-53fd-4986-a632-83a26cef320d" target="_blank"><span id="terms" style="color: yellow">Terms of Use</span></a>
+        <a href="https://www.termsfeed.com/live/d61fb2f6-cfa7-490f-8af5-c62af4122a24" target="_blank"><span id="terms" style="color: darkred">Terms of Use</span></a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-        WebFont.load({
-            google: {
-                families: ['Montserrat:300,400,700']
-            }
-        });
+      WebFont.load({
+        google: {
+          families: ['Montserrat:300,400,700']
+        }
+      });
     </script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
