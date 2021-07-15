@@ -239,7 +239,7 @@ main.home .featured img {
 }
 
 .current-weather, .forecast, .upcoming-events {
-  background-color: #00FF00;
+  background-color: #DFFF00;
 }
 
 .forecast > ul {
