@@ -10,7 +10,7 @@
 
 body {
   min-width: 21.875em;
-  background: #ffffff;
+  background: #424874;
 }
 
 .hidden {
@@ -70,34 +70,9 @@ main {
   display: grid;
 }
 
-.alert.hidden {
-  display: none;
-}
-
-.alert {
-  background: #dc3b00;
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.alert > .msg {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.alert > button {
-  background: transparent;
-  border: none;
-  color: #000000;
-  font-weight: bold;
-}
-
 header {
   display: flex;
-  background-color: #FF9F1C;
+  background-color: #A6B1E1;
 }
 
 header .brand {
@@ -121,7 +96,7 @@ header .logo {
 
 nav {
   line-height: 1.25;
-  background-color: #FFBF69;
+  background-color: #7CC6FE;
   border-bottom: 0.125em solid #d2d4d4;
   padding: 1.5em 0;
 }
@@ -151,7 +126,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: .5em solid #4D91BB;
+  border-bottom: .5em solid #2F4858;
 }
 
 nav li:first-child {
@@ -159,7 +134,7 @@ nav li:first-child {
 }
 
 footer {
-  background-color: #FFBF69;
+  background-color: #7CC6FE;
   color: #0f0f0f;
   border-top: 0.125em solid #d2d4d4;
   line-height: 2;
@@ -264,7 +239,7 @@ main.home .featured img {
 }
 
 .current-weather, .forecast, .upcoming-events {
-  background-color: #CBF3F0;
+  background-color: #00FF00;
 }
 
 .forecast > ul {
