@@ -116,7 +116,7 @@ nav li {
 
 nav li.active a {
   background-color: #22516E;
-  color: black;
+  color: darkred;
 }
 
 nav a {
@@ -135,7 +135,7 @@ nav li:first-child {
 
 footer {
   background-color: #7CC6FE;
-  color: black;
+  color: darkred;
   border-top: 0.125em solid #d2d4d4;
   line-height: 2;
   padding: 1em;
