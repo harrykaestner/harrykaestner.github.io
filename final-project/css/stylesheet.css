@@ -116,7 +116,7 @@ nav li {
 
 nav li.active a {
   background-color: #22516E;
-  color: #fff;
+  color: black;
 }
 
 nav a {
